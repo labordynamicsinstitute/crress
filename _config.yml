@@ -34,11 +34,11 @@ social:
 #collections:
 #  - projects
 
-format:
-  - day: Tuesday
-  - time: '4:15 PM Eastern'
-  - format: online
-  - length: 60 
+# for the format page
+format_day: Tuesday
+format_time: '4:15 PM Eastern'
+format_format: online
+format_length: 60 
 
 projects:
   - date: 2022-08-30
