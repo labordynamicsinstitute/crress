@@ -58,7 +58,7 @@ projects:
     session: 4	
     title: Should teaching reproducibility be a part of undergraduate education or curriculum?	
     conference: SEA
-    content: LARS will be moderator - will write abstract
+    content: "Panelists will discuss teaching reproducibility (TIER Protocol), the involvement of undergraduates for replications based on restricted-access data, and other topics." 
   - date: 2022-12-13	
     session: 5		
     title: 'Reproducibility and confidential or proprietary data: can it be done?'	
