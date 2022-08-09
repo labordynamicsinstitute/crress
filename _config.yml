@@ -34,6 +34,12 @@ social:
 #collections:
 #  - projects
 
+format:
+  - day: Tuesday
+  - time: '4:15 PM Eastern'
+  - format: online
+  - length: 60 
+
 projects:
   - date: 2022-08-30
     session: 1		
