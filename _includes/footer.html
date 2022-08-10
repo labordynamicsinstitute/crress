@@ -21,9 +21,10 @@
                     </li>
                 </ul>
                 <p class="copyright text-muted small">{{ site.copyright }}</p>
+                <p class="copyright text-muted small">{% include credits.html %}</p>
             </div>
-            <div class="col-md-4">
-                {{ site.credits }}
+            <div class="col-md-3 text-muted small">
+                {% include funding.html %}
             </div>
         </div>
     </div>
