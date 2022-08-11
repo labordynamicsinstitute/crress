@@ -50,10 +50,12 @@ projects:
     session: 2		
     title: 'Institutional support: Should journals verify reproducibility?'
     content: 'Different journals have different approaches towards enforcement of their data availability policies, ranging from a thorough and complete verification including running code and checking the output, to a cursory review of the files provided to make sure they appear satisfactory, to simply receiving the data and code package and archiving it on a website or a repository. What drives the choice of approach?  What are the reasons behind such choices?'
+    panelists: "Guido Imbens (Econometrica), Tim Salmon (Economic Inquiry), Toni Whited (Journal of Financial Economics)"
   - date: 2022-10-25	
     session: 3		
     title: Reproducibility and ethics approval - a conversation with IRBs	
     content: "One of the most crucial dimensions that Internal Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
+    panelists: "Michelle N. Meyer (Geisinger), others TBD"
   - date: 2022-11-19	
     session: 4	
     title: Should teaching reproducibility be a part of undergraduate education or curriculum?	

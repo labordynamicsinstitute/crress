@@ -172,7 +172,7 @@ p.copyright {
     font-size: x-large;
 }
 
-.confdate i, .confloc i {
+.confdate i, .confloc i , .confpeople i {
     padding-right: 10px;
 }
 
@@ -182,7 +182,7 @@ p.copyright {
     font-size: large;
 }
 
-.confloc {
+.confloc, .confpeople {
     font-weight: bold;
     font-size: x-large;
 }
