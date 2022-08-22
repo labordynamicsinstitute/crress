@@ -41,34 +41,34 @@ format_format: online
 format_length: 60 
 
 projects:
-  - date: 2022-08-30
-    session: 1		
-    title: 'Disciplinary support: why is reproducibility not uniformly required across disciplines?'
-    content: 	'Why do learned societies decide (or not) to implement data (and code) availability policies? What influences the level of enforcement, and the choice of "enforcer" (data editor, administrative staff, referees)? What are reasons NOT to require data sharing or code sharing?'
-    img: cress_image.png
   - date: 2022-09-27	
-    session: 2		
+    session: 1		
     title: 'Institutional support: Should journals verify reproducibility?'
     content: 'Different journals have different approaches towards enforcement of their data availability policies, ranging from a thorough and complete verification including running code and checking the output, to a cursory review of the files provided to make sure they appear satisfactory, to simply receiving the data and code package and archiving it on a website or a repository. What drives the choice of approach?  What are the reasons behind such choices?'
     panelists: "Guido Imbens (Econometrica), Tim Salmon (Economic Inquiry), Toni Whited (Journal of Financial Economics)"
   - date: 2022-10-25	
-    session: 3		
+    session: 1	
     title: Reproducibility and ethics approval - a conversation with IRBs	
     content: "One of the most crucial dimensions that Internal Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
     panelists: "Michelle N. Meyer (Geisinger), others TBD"
   - date: 2022-11-19	
-    session: 4	
+    session: 3	
     title: Should teaching reproducibility be a part of undergraduate education or curriculum?	
     conference: SEA
     content: "Panelists will discuss teaching reproducibility (TIER Protocol), the involvement of undergraduates for replications based on restricted-access data, and other topics." 
   - date: 2022-12-13	
-    session: 5		
+    session: 4		
     title: 'Reproducibility and confidential or proprietary data: can it be done?'	
     content: 'What happens to reproducibility when data are confidential or proprietary? Many journals can only ask that detailed access procedures be provided in a ReadMe file, but what mechanims could be used to conduct computational reproducibility checks on such data? Should authors temporarily share their data with the journal for the purposes of reproducibility verification, even if they are not part of the public data replication package? Is it feasible to use a network of "insiders" to run code provided as part of a data replication package to assess reproducibility? Could a "certified run" be used? '
   - date: 2023-01-07	
-    session: 6	
+    session: 5	
     conference: ASSA	
     title: 'Why should researchers worry about reproducibility? The Twitter version'
+  - date: 2023-01-31
+    session: 6		
+    title: 'Disciplinary support: why is reproducibility not uniformly required across disciplines?'
+    content: 	'Why do learned societies decide (or not) to implement data (and code) availability policies? What influences the level of enforcement, and the choice of "enforcer" (data editor, administrative staff, referees)? What are reasons NOT to require data sharing or code sharing?'
+    img: cress_image.png
   - date: 2023-01-31
     session: 7		
     title: Is there a role for academic institutions to verify reproducibility?	
