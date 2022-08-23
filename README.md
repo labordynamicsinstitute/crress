@@ -1,1 +1,1 @@
-This will replace https://www2.vrdc.cornell.edu/news/
+This  is the code for the CRRESS website landing page.
