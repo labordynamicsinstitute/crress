@@ -80,6 +80,10 @@ projects:
     title: 'Whether and How to integrate reproducibility into Social Science graduate education?' 
   - date: 2023-05-30	
     title: Should funders require reproducible archives?
+    panelists: 
+      - "Josh Greenberg (Alfred P. Sloan Foundation)"
+      - "Sebastian Martinez (3ie)"
+      - "TBD (TBD)"
   - date: 2023-06-xx	
     conference: CEA	
     title: 'Reproducibility, confidentiality, and open data mandates'	
