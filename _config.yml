@@ -59,18 +59,30 @@ projects:
     title: Should teaching reproducibility be a part of undergraduate education or curriculum?	
     conference: SEA
     content: "Panelists will discuss teaching reproducibility (TIER Protocol), the involvement of undergraduates for replications based on restricted-access data, and other topics." 
+    panelists: 
+      - "Diego Mendez-Carbajo (Fed of St. Louis)"
+      - "Richard Ball (Haverford College)"
+      - "TBD"
   - date: 2022-12-13	
     title: 'Reproducibility and confidential or proprietary data: can it be done?'	
     content: 'What happens to reproducibility when data are confidential or proprietary? Many journals can only ask that detailed access procedures be provided in a ReadMe file, but what mechanims could be used to conduct computational reproducibility checks on such data? Should authors temporarily share their data with the journal for the purposes of reproducibility verification, even if they are not part of the public data replication package? Is it feasible to use a network of "insiders" to run code provided as part of a data replication package to assess reproducibility? Could a "certified run" be used? '
-  - date: 2023-01-07	
-    conference: ASSA	
-    title: 'Why should researchers worry about reproducibility? The Twitter version'
+    panelists:
+      - "Lars Vilhuber (Cornell University)"
+      - "Paulo Guimarães (Banco de Portugal, BPLIM)"
+      - "TBD"
+#  - date: 2023-01-07	
+#    conference: ASSA	
+#    title: 'Why should researchers worry about reproducibility? The Twitter version'
   - date: 2023-01-31
     title: 'Disciplinary support: why is reproducibility not uniformly required across disciplines?'
     content: 	'Why do learned societies decide (or not) to implement data (and code) availability policies? What influences the level of enforcement, and the choice of "enforcer" (data editor, administrative staff, referees)? What are reasons NOT to require data sharing or code sharing?'
     img: cress_image.png
-  - date: 2023-01-31
-    title: Is there a role for academic institutions to verify reproducibility?	
+    panelists:
+      - "Kim Weeden (Cornell University, Sociology)"
+      - "Betsy Sinclair (Washington University in St. Louis, Political Science"
+      - "Hilary Hoynes (University of California at Berkeley, Economics)"
+#  - date: 2023-01-31
+#    title: Is there a role for academic institutions to verify reproducibility?	
   - date: 2023-02-28	
     title: 'Institutional support: How do journal reproducibility verification services work?'
     content: 'When journals conduct active verification of replication packages, including accessing data and running code, how does that work?  Can journals with limited resources still assess reproducibility? What depth of verification is optimal? Do journals provide a clear indication of whether an article was successfully reproduced?'
@@ -85,9 +97,9 @@ projects:
       - "Sebastian Martinez (3ie)"
       - "TBD (TBD)"
   - date: 2023-06-xx	
-    conference: CEA	
+    conference: CEA	(tentative)
     title: 'Reproducibility, confidentiality, and open data mandates'	
     content: 'Many granting agencies have adopted open data mandates. What is the interplay between reproducibility and those mandates? How can researchers be supported to meet those mandates, both in general, and specifically when data are confidential. At first glance, confidentiality and open data seem irreconciable, but could we find practices that both respect confidentiality and provide enough information and transparency to foster reproducibility?'
   - date: 2023-07-xx	
-    conference: WEAI?	
+    conference: WEAI (tentative)
     title: 'Whether and How to integrate reproducibility into Social Science graduate education? (2nd round)' 
