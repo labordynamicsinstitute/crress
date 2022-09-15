@@ -1,0 +1,20 @@
+<h2 class="section-heading">Session {% increment session_counter %}: {{ post.title }}{% if post.conference %} (at {{ post.conference }}){% endif %}</h2>
+
+<div class="confdate"><i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date }}{% if post.time %} **exceptionally** @ {{ post.time }}{% else %} @ {{ site.format_time }}{% endif %}</div>
+
+<div class="confloc"><i class="fa fa-map-marker" aria-hidden="true"></i>
+    {% if post.conference %}{{ post.conference }}{% else %}{{ site.format_format }}{% endif %}</div>
+
+    {% if post.panelists %}<div class="confpeople"><i class="fa fa-users" aria-hidden="true"></i>Panelists: 
+    {% for tag in post.panelists %}
+     <!-- {{ tag }} -->
+      {% assign author = site.panelists | where: 'tag', tag | first %}
+      {% if author %}
+          <!-- {{ author }} -->
+          {% if author.url %}<a href="{{ author.url }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif %} 
+          ({{ author.affil }}){% endif %}{% unless forloop.last %},{% endunless %}
+    {% endfor %}</div>
+
+    {% endif %}
+    
+<div class="lead">{{ post.content }}</div>

@@ -31,8 +31,6 @@ social:
   - title: github
     url: https://github.com/labordynamicsinstitute/crress
 
-#collections:
-#  - projects
 
 # for the format page
 format_day: Tuesday
@@ -46,31 +44,31 @@ projects:
     title: 'Institutional support: Should journals verify reproducibility?'
     content: 'Different journals have different approaches towards enforcement of their data availability policies, ranging from a thorough and complete verification including running code and checking the output, to a cursory review of the files provided to make sure they appear satisfactory, to simply receiving the data and code package and archiving it on a website or a repository. What drives the choice of approach?  What are the reasons behind such choices?'
     panelists: 
-      - "Guido Imbens (Econometrica)"
-      - "Tim Salmon (Economic Inquiry)"
-      - "Toni Whited (Journal of Financial Economics)"
+      - imbens
+      - salmon
+      - whited
   - date: 2022-10-25	
     title: Reproducibility and ethics approval - a conversation with IRBs	
     content: "One of the most crucial dimensions that Internal Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
     panelists: 
-      - "Michelle N. Meyer (Geisinger)"
-      - "others TBD"
+      - meyer 
+      - others 
   - date: 2022-11-19	
     title: Should teaching reproducibility be a part of undergraduate education or curriculum?	
     conference: SEA
     content: "Panelists will discuss teaching reproducibility (TIER Protocol), the involvement of undergraduates for replications based on restricted-access data, and other topics." 
     panelists: 
-      - "Diego Mendez-Carbajo (Fed of St. Louis)"
-      - "Richard Ball (Haverford College)"
-      - "TBD"
+      - diego 
+      - ball 
+      - others
   - date: 2022-12-13	
     time: '12:15 PM Eastern'
     title: 'Reproducibility and confidential or proprietary data: can it be done?'	
     content: 'What happens to reproducibility when data are confidential or proprietary? Many journals can only ask that detailed access procedures be provided in a ReadMe file, but what mechanims could be used to conduct computational reproducibility checks on such data? Should authors temporarily share their data with the journal for the purposes of reproducibility verification, even if they are not part of the public data replication package? Is it feasible to use a network of "insiders" to run code provided as part of a data replication package to assess reproducibility? Could a "certified run" be used? '
     panelists:
-      - "Lars Vilhuber (Cornell University)"
-      - "Paulo Guimarães (Banco de Portugal, BPLIM)"
-      - "TBD"
+      - vilhuber
+      - guimaraes
+      - others
 #  - date: 2023-01-07	
 #    conference: ASSA	
 #    title: 'Why should researchers worry about reproducibility? The Twitter version'
@@ -79,9 +77,9 @@ projects:
     content: 	'Why do learned societies decide (or not) to implement data (and code) availability policies? What influences the level of enforcement, and the choice of "enforcer" (data editor, administrative staff, referees)? What are reasons NOT to require data sharing or code sharing?'
     img: cress_image.png
     panelists:
-      - "Kim Weeden (Cornell University, Sociology)"
-      - "Betsy Sinclair (Washington University in St. Louis, Political Science"
-      - "Hilary Hoynes (University of California at Berkeley, Economics)"
+      - weeden
+      - sinclair
+      - hoynes 
 #  - date: 2023-01-31
 #    title: Is there a role for academic institutions to verify reproducibility?	
   - date: 2023-02-28	
@@ -94,9 +92,9 @@ projects:
   - date: 2023-05-30	
     title: Should funders require reproducible archives?
     panelists: 
-      - "Josh Greenberg (Alfred P. Sloan Foundation)"
-      - "Sebastian Martinez (3ie)"
-      - "Stuart Buck (Good Science Project)"
+      - greenberg
+      - martinez
+      - buck
   - date: 2023-06-xx	
     conference: CEA	(tentative)
     title: 'Reproducibility, confidentiality, and open data mandates'	
@@ -104,3 +102,83 @@ projects:
   - date: 2023-07-xx	
     conference: WEAI (tentative)
     title: 'Whether and How to integrate reproducibility into Social Science graduate education? (2nd round)' 
+
+panelists:
+  - tag: imbens
+    name: "Guido Imbens"
+    bio: |
+      Guido Imbens is The Applied Econometrics Professor at the Stanford Graduate School of Business and Professor of Economics in the Economics Department at Stanford University. Imbens specializes in econometrics, and in particular methods for drawing causal inferences from experimental and observational data.  In 2021 he shared the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel with David Card and Joshua Angrist for "methodological contributions to the analysis of causal relationship." He has been the Editor of Econometrica since 2019. 
+    url: https://gsb-faculty.stanford.edu/guido-w-imbens/
+    affil: Stanford and Econometrica
+    affiliation: Stanford Graduate School of Business, Economics Department at Stanford University, Editor of Econometrica
+  - tag: salmon
+    name: "Tim Salmon"
+    bio: |
+      Tim Salmon is Professor of Economics at SMU. He joined the editorial board of Economic Inquiry in 2011 and became Editor in 2021. He has also served on the boards of many other journals including Experimental Economics, Journal of the Economic Science Association, Journal of Behavioral and Experimental Economics and several others.  His research focuses mostly on applied mechanism design issues utilizing a mix of experimental and theoretical methods to address problems covering many different areas. These include issues in auction design, prevention of corruption, design of criminal sentencing guidelines, design of mechanisms for public goods provision, improving our understanding of the causes and impacts of inequality among others. 
+    url: https://s2.smu.edu/tsalmon/
+    affil: SMU and Economic Inquiry
+    affiliation: Professor of Economics at SMU and Editor of Economic Inquiry
+  - tag: whited 
+    name: "Toni Whited"
+    bio: |
+      Toni Whited is the Dale L. Dykema Professor of Business Administration at the Ross School of Business at the University of Michigan. Professor Whited received her B.A. in economics and French, summa cum laude, from the University of Oregon and her Ph.D. in economics from Princeton. Her research covers topics such as corporate investment, corporate cash policy, monetary policy, and corporate diversification.  She is the past president of the Western Finance Association, and she serves as editor-in-chief for the Journal of Financial Economics.
+    url: http://toniwhited.com/
+    affil: University of Michigan and Journal of Financial Economics
+    affiliation: Ross School of Business at the University of Michigan and Editor of Journal of Financial Economics
+  - tag: meyer
+    name: "Michelle Meyer"
+    affil: "Geisinger"
+    affiliation: "Geisinger Commonwealth School of Medicine"
+  - tag: others
+    name: "Others"
+    affil: "TBD"
+  - tag: diego
+    name: "Diego Mendez-Carbajo"
+    affil: "Fed of St. Louis"
+    affiliation: "Federal Reserve Bank of St. Louis"
+  - tag: ball
+    name: "Richard Ball"
+    affil: "Project TIER"
+    affiliation: "Haverford College and Project TIER"
+  - tag: buck 
+    name: Stuart Buck
+    affil: "Good Science Project"
+    affiliation: "Good Science Project"
+    bio: |
+      Stuart Buck is the Executive Director of the Good Science Project. Formerly, he spent many years at Arnold Ventures, where he was deeply engaged in issues involving scientific reproducibility (e.g., launching the Center for Open Science, Vivli, the Stanford Center for Reproducible Neuroscience, and more). He can be found at https://twitter.com/stuartbuck1 or https://goodscienceproject.org
+    url: https://twitter.com/stuartbuck1
+  - tag: martinez
+    name: Sebastian Martinez
+    affil: 3ie
+    affiliation: "3ie"
+    bio: |
+      Sebastian Martinez is the Director of Evaluation Programs at 3ie where he leads the generation of high-quality policy-relevant evidence through impact evaluations and applied research. Sebastian's work spans multiple sectors, including health, social protection, labor markets, early childhood development, and many others. He is co-author of the widely used book Impact Evaluation in Practice, now in its second edition and published in four languages. Sebastian holds a Ph.D. in Economics from the University of California at Berkeley, with a specialization in economic development and applied microeconomics. 
+  - tag: hoynes
+    name: "Hilary Hoynes"
+    bio: |
+      Hilary Hoynes is Professor of Economics and Public Policy at UC Berkeley and holds the Haas Distinguished Chair of Economics Disparities where she also directs the Berkeley Opportunity Lab. She studies poverty, inequality, and the role of the social safety net. She has served as Co-Editor of the American Economic Review and the American Economic Journal: Economic Policy and is a member of the National Academy of Sciences Committee on National Statistics. Professor Hoynes is a member of the American Academy of Art and Sciences. 
+    affil: "Berkeley, Economics"
+    affiliation: "UC Berkeley and Berkeley Opportunity Lab"
+    url: https://www.hilaryhoynes.com/
+  - tag: vilhuber
+    name: "Lars Vilhuber"
+    affil: "Cornell and AEA Data Editor"
+    affiliation: "Cornell University and Data Editor for the American Economic Association"
+    url: https://lars.vilhuber.com
+  - tag: guimaraes
+    name: "Paulo Guimarães"
+    affil: "Banco de Portugal, BPLIM"
+    affiliation: "Banco de Portugal, BPLIM"
+  - tag: weeden
+    name: "Kim Weeden"
+    affiliation: "Cornell University, Department of Sociology"
+    affil: "Cornell, Sociology"
+    url: https://sociology.cornell.edu/kim-weeden
+  - tag: sinclair
+    name: "Betsy Sinclair"
+    affil: "WashU, Political Science"
+    affiliation: "Washington University in St. Louis, Political Science"
+  - tag: greenberg
+    name: "Josh Greenberg"
+    affiliation: "Alfred P. Sloan Foundation"
+    affil: Sloan
