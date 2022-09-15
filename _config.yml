@@ -68,7 +68,7 @@ projects:
     panelists:
       - vilhuber
       - guimaraes
-      - others
+      - horton
 #  - date: 2023-01-07	
 #    conference: ASSA	
 #    title: 'Why should researchers worry about reproducibility? The Twitter version'
@@ -182,3 +182,11 @@ panelists:
     name: "Josh Greenberg"
     affiliation: "Alfred P. Sloan Foundation"
     affil: Sloan
+  - tag: horton
+    name: John Horton
+    url: https://john-joseph-horton.com/
+    bio: |
+      John Horton is an economist and the Richard S. Leghorn (1939) Career Development Professor at the MIT Sloan School of Management and a Faculty Research Fellow at the NBER.  My research is primarily focused on issues in information systems, market design, labor economics and organizational economics, particularly in the context of online markets
+    affil: MIT
+    affiliation: MIT Sloan School of Management and NBER
+    
