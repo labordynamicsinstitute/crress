@@ -10,16 +10,7 @@
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Session {% increment session_counter %}: {{ post.title }}{% if post.conference %} (at {{ post.conference }}){% endif %}</h2>
-                    <div class="confdate"><i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date }}{% if post.time %} **exceptionally** @ {{ post.time }}{% else %} @ {{ site.format_time }}{% endif %}</div>
-                    <div class="confloc"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        {% if post.conference %}{{ post.conference }}{% else %}{{ site.format_format }}{% endif %}</div>
-                    {% if post.panelists %}<div class="confpeople"><i class="fa fa-users" aria-hidden="true"></i>Panelists: 
-                        {% for person in post.panelists %}
-                               {{ person }}{% unless forloop.last %},{% endunless %}
-                        {% endfor %}</div>
-                    {% endif %}
-                    <div class="lead">{{ post.content }}</div>
+                    {% include session_details.html %}
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     {% if post.img %}<img class="img-responsive" src="img/projects/{{ post.img }}" alt="">{% else %}<img class="img-responsive" src="img/projects/cress_image.png" alt="">{% endif %}
@@ -43,16 +34,7 @@
                 </div>
                <div class="col-lg-5  col-lg-offset-2  col-sm-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Session {% increment session_counter %}: {{ post.title }}</h2>
-                    <div class="confdate"><i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date }}{% if post.time %} **exceptionally** @ {{ post.time }}{% else %} @ {{ site.format_time }}{% endif %}</div>
-                    <div class="confloc"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        {% if post.conference %}{{ post.conference }}{% else %}{{ site.format_format }}{% endif %}</div>
-                        {% if post.panelists %}<div class="confpeople"><i class="fa fa-users" aria-hidden="true"></i>Panelists: 
-                            {% for person in post.panelists %}
-                                   {{ person }}{% unless forloop.last %},{% endunless %}
-                            {% endfor %}</div>
-                        {% endif %}
-                    <div class="lead">{{ post.content }}</div>
+                    {% include session_details.html %}
                 </div>
                 
             </div>
