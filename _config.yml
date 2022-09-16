@@ -19,6 +19,8 @@ logo: cornell_seal_simple_web/cornell_seal_simple_black.svg
 # Build settings
 markdown: kramdown
 permalink: pretty
+include:
+ - announcements
 
 # ----------------------- #
 #   3rd Party Settings    #
