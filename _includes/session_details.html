@@ -2,8 +2,13 @@
 
 <div class="confdate"><i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date }}{% if post.time %} **exceptionally** @ {{ post.time }}{% else %} @ {{ site.format_time }}{% endif %}</div>
 
-<div class="confloc"><i class="fa fa-map-marker" aria-hidden="true"></i>
-    {% if post.conference %}{{ post.conference }}{% else %}{% if post.registrationurl %}Please <i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="{{ post.registrationurl }}" alt="Registration link">register to join us on Zoom.</a>{% else %}{{ site.format_format }}{% endif %}{% endif %}</div>
+<div class="confloc">
+    {% if post.conference %}
+    <i class="fa fa-map-marker" aria-hidden="true"></i>{{ post.conference }}{% if post.registrationurl %} (<a href="{{ post.registrationurl }}" alt="Registration link">Registration</a>){% endif %}
+    {% else %}
+    {% if post.registrationurl %}<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Please <a href="{{ post.registrationurl }}" alt="Registration link">register to join us on Zoom.</a>
+    {% else %}
+    <i class="fa fa-map-marker" aria-hidden="true"></i>{{ site.format_format }}{% endif %}{% endif %}</div>
 
     {% if post.panelists %}<div class="confpeople"><i class="fa fa-users" aria-hidden="true"></i>Panelists: 
     {% for tag in post.panelists %}

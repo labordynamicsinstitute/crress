@@ -59,6 +59,7 @@ projects:
   - date: 2022-11-19	
     title: Should teaching reproducibility be a part of undergraduate education or curriculum?	
     conference: SEA
+    registrationurl: https://web.cvent.com/event/b75f2fe3-fe9a-4013-87b4-ef4c773517e5/
     content: "Panelists will discuss teaching reproducibility (TIER Protocol), the involvement of undergraduates for replications based on restricted-access data, and other topics." 
     panelists: 
       - diego 

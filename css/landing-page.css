@@ -1,3 +1,5 @@
+---
+--- 
 /*!
  * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -32,7 +34,7 @@ h6 {
     text-align: center;
     color: #f8f8f8;
     /* background: url(../img/intro-bg.jpg) no-repeat center center; */
-    background: url(../img/titles/LDI\ Conf\ CRRESS\ V1x1600.png) no-repeat center center;
+    background: url({{ "/img/titles/LDI Conf CRRESS V1x1600.png" | absolute_url }}) no-repeat center center;
     background-size: contain;
     margin-top: 50px;
 }
@@ -114,7 +116,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url({{ "/img/banner-bg.jpg" | absolute_url }}) no-repeat center center;
     background-size: contain;
 }
 
@@ -186,4 +188,9 @@ p.copyright {
 .confloc, .confpeople {
     font-weight: bold;
     font-size: x-large;
+}
+
+.confloc .confdate .confpeople {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
