@@ -51,11 +51,11 @@ projects:
       - whited
     registrationurl: https://cornell.zoom.us/webinar/register/WN_948sOMSHTCub2kTESJNdKg
   - date: 2022-10-25	
-    title: Reproducibility and ethics approval - a conversation with IRBs	
+    title: Reproducibility and ethics - IRBs and beyond	
     content: "One of the most crucial dimensions that Internal Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
     panelists: 
       - meyer 
-      - others 
+      - swauger 
   - date: 2022-11-19	
     title: Should teaching reproducibility be a part of undergraduate education or curriculum?	
     conference: SEA
@@ -193,4 +193,9 @@ panelists:
       John Horton is an economist and the Richard S. Leghorn (1939) Career Development Professor at the MIT Sloan School of Management and a Faculty Research Fellow at the NBER.  My research is primarily focused on issues in information systems, market design, labor economics and organizational economics, particularly in the context of online markets
     affil: MIT
     affiliation: MIT Sloan School of Management and NBER
+  - tag: swauger
+    name: Shea Swauger
+    affil: FPF
+    url: https://fpf.org/
+    affiliation: Future of Privacy Forum
     
