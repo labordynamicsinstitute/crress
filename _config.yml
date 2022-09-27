@@ -41,6 +41,7 @@ format_format: online
 format_length: 60 
 
 # Sessions should be ordered by date - they will appear on the website in the order listed here, no additional sorting happens!
+# Session-specific images should be in img/sessions/{{ IMG }}
 projects:
   - date: 2022-09-27	
     title: 'Institutional support: Should journals verify reproducibility?'
@@ -50,6 +51,7 @@ projects:
       - salmon
       - whited
     registrationurl: https://cornell.zoom.us/webinar/register/WN_948sOMSHTCub2kTESJNdKg
+    img: crress-session1.png
   - date: 2022-10-25	
     title: Reproducibility and ethics - IRBs and beyond	
     content: "One of the most crucial dimensions that Internal Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
@@ -79,7 +81,6 @@ projects:
   - date: 2023-01-31
     title: 'Disciplinary support: why is reproducibility not uniformly required across disciplines?'
     content: 	'Why do learned societies decide (or not) to implement data (and code) availability policies? What influences the level of enforcement, and the choice of "enforcer" (data editor, administrative staff, referees)? What are reasons NOT to require data sharing or code sharing?'
-    img: cress_image.png
     panelists:
       - weeden
       - sinclair
