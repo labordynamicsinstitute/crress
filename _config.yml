@@ -58,6 +58,7 @@ projects:
     panelists: 
       - meyer 
       - swauger 
+      - kopper
   - date: 2022-11-19	
     title: Should teaching reproducibility be a part of undergraduate education or curriculum?	
     conference: SEA
@@ -116,6 +117,7 @@ panelists:
     url: https://gsb-faculty.stanford.edu/guido-w-imbens/
     affil: Stanford and Econometrica
     affiliation: Stanford Graduate School of Business, Economics Department at Stanford University, Editor of Econometrica
+    twitter: EconometricaEd
   - tag: salmon
     name: "Tim Salmon"
     bio: |
@@ -123,6 +125,7 @@ panelists:
     url: https://s2.smu.edu/tsalmon/
     affil: SMU and Economic Inquiry
     affiliation: Professor of Economics at SMU and Editor of Economic Inquiry
+    twitter: tsalmon_econ
   - tag: whited 
     name: "Toni Whited"
     bio: |
@@ -130,10 +133,14 @@ panelists:
     url: http://toniwhited.com/
     affil: University of Michigan and Journal of Financial Economics
     affiliation: Ross School of Business at the University of Michigan and Editor of Journal of Financial Economics
+    twitter: toniwhited
   - tag: meyer
-    name: "Michelle Meyer"
+    name: "Michelle N. Meyer"
     affil: "Geisinger"
     affiliation: "Geisinger Commonwealth School of Medicine"
+    url: http://www.michellenmeyer.com/about.html
+    twitter: michellenmeyer
+    linkedin: http://www.linkedin.com/pub/michelle-n-meyer/51/543/b67/
   - tag: others
     name: "Others"
     affil: "TBD"
@@ -152,6 +159,7 @@ panelists:
     bio: |
       Stuart Buck is the Executive Director of the Good Science Project. Formerly, he spent many years at Arnold Ventures, where he was deeply engaged in issues involving scientific reproducibility (e.g., launching the Center for Open Science, Vivli, the Stanford Center for Reproducible Neuroscience, and more). He can be found at https://twitter.com/stuartbuck1 or https://goodscienceproject.org
     url: https://twitter.com/stuartbuck1
+    twitter: stuartbuck1
   - tag: martinez
     name: Sebastian Martinez
     affil: 3ie
@@ -191,7 +199,7 @@ panelists:
     name: John Horton
     url: https://john-joseph-horton.com/
     bio: |
-      John Horton is an economist and the Richard S. Leghorn (1939) Career Development Professor at the MIT Sloan School of Management and a Faculty Research Fellow at the NBER.  My research is primarily focused on issues in information systems, market design, labor economics and organizational economics, particularly in the context of online markets
+      John Horton is an economist and the Richard S. Leghorn (1939) Career Development Professor at the MIT Sloan School of Management and a Faculty Research Fellow at the NBER.  His research is primarily focused on issues in information systems, market design, labor economics and organizational economics, particularly in the context of online markets.
     affil: MIT
     affiliation: MIT Sloan School of Management and NBER
   - tag: swauger
@@ -199,4 +207,12 @@ panelists:
     affil: FPF
     url: https://fpf.org/
     affiliation: Future of Privacy Forum
+  - tag: kopper
+    name: Sarah kopper
+    affil: JPAL
+    affiliation: Abdul Latif Jameel Poverty Action Lab 
+    url: https://www.povertyactionlab.org/person/kopper
+    bio: |
+      Sarah Kopper is the Associate Director of Research at J-PAL Global at MIT. She works to improve research operations at J-PAL, with a focus on research resources and knowledge sharing across offices and projects. She leads J-PAL's research transparency work and coordinates processes related to J-PAL's affiliates. Sarah's research focuses on the relationship between agricultural input markets, input use, and production in Eastern and Southern Africa. Her field experience includes agro-ecological research in Malawi and qualitative work on a palm oil plantation in Cameroon. She holds a PhD in agricultural economics from Michigan State University and a BA in economics from Cornell University. Prior to graduate school, she served as a Peace Corps Volunteer in Senegal for two years.
+
     
