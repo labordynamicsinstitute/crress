@@ -1,14 +1,22 @@
-<h2 class="section-heading">Session {% increment session_counter %}: {{ post.title }}{% if post.conference %} (at {{ post.conference }}){% endif %}</h2>
+<h2 id="session-{{ session_counter }}" class="section-heading">Session {% increment session_counter %}: {{ post.title }}{% if post.conference %} (at {{ post.conference }}){% endif %}</h2>
 
 <div class="confdate"><i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date }}{% if post.time %} **exceptionally** @ {{ post.time }}{% else %} @ {{ site.format_time }}{% endif %}</div>
 
 <div class="confloc">
     {% if post.conference %}
-    <i class="fa fa-map-marker" aria-hidden="true"></i>{{ post.conference }}{% if post.registrationurl %} (<a href="{{ post.registrationurl }}" alt="Registration link">Registration</a>){% endif %}
+    <i class="fa fa-map-marker" aria-hidden="true"></i>{{ post.conference }}
+    {% if post.registrationurl %} (<a href="{{ post.registrationurl }}" alt="Registration link">Registration</a>)
+      {% endif %}
     {% else %}
-    {% if post.registrationurl %}<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Please <a href="{{ post.registrationurl }}" alt="Registration link">register to join us on Zoom.</a>
-    {% else %}
-    <i class="fa fa-map-marker" aria-hidden="true"></i>{{ site.format_format }}{% endif %}{% endif %}</div>
+      {% if post.youtube %}
+      <i class="fa fa-youtube" aria-hidden="true"></i><a href="{{ post.youtube }}" alt="Youtube link">View the recording</a>
+      {% else %}
+         {% if post.registrationurl %}<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Please <a href="{{ post.registrationurl }}" alt="Registration link">register to join us on Zoom.</a>
+         {% else %}
+         <i class="fa fa-map-marker" aria-hidden="true"></i>{{ site.format_format }}
+         {% endif %}
+      {% endif %}
+    {% endif %}</div>
 
     {% if post.panelists %}<div class="confpeople"><i class="fa fa-users" aria-hidden="true"></i>Panelists: 
     {% for tag in post.panelists %}
