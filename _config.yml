@@ -46,6 +46,7 @@ projects:
   - date: 2022-09-27	
     title: 'Institutional support: Should journals verify reproducibility?'
     content: 'Different journals have different approaches towards enforcement of their data availability policies, ranging from a thorough and complete verification including running code and checking the output, to a cursory review of the files provided to make sure they appear satisfactory, to simply receiving the data and code package and archiving it on a website or a repository. What drives the choice of approach?  What are the reasons behind such choices?'
+    moderator: vilhuber
     panelists: 
       - imbens
       - salmon
@@ -56,6 +57,7 @@ projects:
   - date: 2022-10-25	
     title: Reproducibility and ethics - IRBs and beyond	
     content: "One of the most crucial dimensions that Internal Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
+    moderator: vilhuber
     panelists: 
       - meyer 
       - swauger 
@@ -66,6 +68,7 @@ projects:
     registrationurl: https://web.cvent.com/event/b75f2fe3-fe9a-4013-87b4-ef4c773517e5/
     content: "Panelists will discuss teaching reproducibility (TIER Protocol), the involvement of undergraduates for replications based on restricted-access data, and other topics. The session is in person at the Southern Economic Association." 
     time: '1:15 PM Eastern'
+    moderator: schmutte
     panelists: 
       - diego 
       - ball 
@@ -74,6 +77,7 @@ projects:
     time: '12:15 PM Eastern'
     title: 'Reproducibility and confidential or proprietary data: can it be done?'	
     content: 'What happens to reproducibility when data are confidential or proprietary? Many journals can only ask that detailed access procedures be provided in a ReadMe file, but what mechanims could be used to conduct computational reproducibility checks on such data? Should authors temporarily share their data with the journal for the purposes of reproducibility verification, even if they are not part of the public data replication package? Is it feasible to use a network of "insiders" to run code provided as part of a data replication package to assess reproducibility? Could a "certified run" be used? '
+    moderator: tbd
     panelists:
       - vilhuber
       - guimaraes
@@ -84,6 +88,7 @@ projects:
   - date: 2023-01-31
     title: 'Disciplinary support: why is reproducibility not uniformly required across disciplines?'
     content: 	'Why do learned societies decide (or not) to implement data (and code) availability policies? What influences the level of enforcement, and the choice of "enforcer" (data editor, administrative staff, referees)? What are reasons NOT to require data sharing or code sharing?'
+    moderator: vilhuber
     panelists:
       - weeden
       - sinclair
@@ -93,12 +98,15 @@ projects:
   - date: 2023-02-28	
     title: 'Institutional support: How do journal reproducibility verification services work?'
     content: 'When journals conduct active verification of replication packages, including accessing data and running code, how does that work?  Can journals with limited resources still assess reproducibility? What depth of verification is optimal? Do journals provide a clear indication of whether an article was successfully reproduced?'
+    moderator: connolly
   - date: 2023-03-28	
     title: 'Why can or should academic institutions publish replication packages?'
+    moderator: michuda
   - date: 2023-04-25	
     title: 'Whether and How to integrate reproducibility into Social Science graduate education?' 
   - date: 2023-05-30	
     title: Should funders require reproducible archives?
+    moderator: vilhuber
     panelists: 
       - greenberg
       - martinez
@@ -117,7 +125,7 @@ panelists:
     bio: |
       Guido Imbens is The Applied Econometrics Professor at the Stanford Graduate School of Business and Professor of Economics in the Economics Department at Stanford University. Imbens specializes in econometrics, and in particular methods for drawing causal inferences from experimental and observational data.  In 2021 he shared the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel with David Card and Joshua Angrist for "methodological contributions to the analysis of causal relationship." He has been the Editor of Econometrica since 2019. 
     url: https://gsb-faculty.stanford.edu/guido-w-imbens/
-    affil: Stanford and Econometrica
+    affil: Stanford University and Econometrica
     affiliation: Stanford Graduate School of Business, Economics Department at Stanford University, Editor of Econometrica
     twitter: EconometricaEd
   - tag: salmon
@@ -148,9 +156,12 @@ panelists:
   - tag: others
     name: "Others"
     affil: "TBD"
+  - tag: tbd
+    name: "TBD"
+    affil: ""
   - tag: diego
     name: "Diego Mendez-Carbajo"
-    affil: "Fed of St. Louis"
+    affil: "St. Louis Fed"
     affiliation: "Federal Reserve Bank of St. Louis"
   - tag: ball
     name: "Richard Ball"
@@ -174,14 +185,19 @@ panelists:
     name: "Hilary Hoynes"
     bio: |
       Hilary Hoynes is Professor of Economics and Public Policy at UC Berkeley and holds the Haas Distinguished Chair of Economics Disparities where she also directs the Berkeley Opportunity Lab. She studies poverty, inequality, and the role of the social safety net. She has served as Co-Editor of the American Economic Review and the American Economic Journal: Economic Policy and is a member of the National Academy of Sciences Committee on National Statistics. Professor Hoynes is a member of the American Academy of Art and Sciences. 
-    affil: "Berkeley, Economics"
+    affil: "UC Berkeley, Economics"
     affiliation: "UC Berkeley and Berkeley Opportunity Lab"
     url: https://www.hilaryhoynes.com/
   - tag: vilhuber
     name: "Lars Vilhuber"
-    affil: "Cornell and AEA Data Editor"
+    affil: "Cornell University, AEA Data Editor"
     affiliation: "Cornell University and Data Editor for the American Economic Association"
     url: https://lars.vilhuber.com
+    twitter: larsvil
+  - tag: michuda
+    name: Aleksandr Michuda
+    affil: "Cornell University, Data Science"
+    affiliation: "Cornell University, Center for Data Science for Enterprise and Society"
   - tag: guimaraes
     name: "Paulo Guimarães"
     affil: "Banco de Portugal, BPLIM"
@@ -189,7 +205,7 @@ panelists:
   - tag: weeden
     name: "Kim Weeden"
     affiliation: "Cornell University, Department of Sociology"
-    affil: "Cornell, Sociology"
+    affil: "Cornell University, Sociology"
     url: https://sociology.cornell.edu/kim-weeden
   - tag: sinclair
     name: "Betsy Sinclair"
@@ -198,7 +214,7 @@ panelists:
   - tag: greenberg
     name: "Josh Greenberg"
     affiliation: "Alfred P. Sloan Foundation"
-    affil: Sloan
+    affil: Sloan Foundation
   - tag: horton
     name: John Horton
     url: https://john-joseph-horton.com/
@@ -223,5 +239,15 @@ panelists:
     bio: |
       Sarah Kopper is the Associate Director of Research at J-PAL Global at MIT. She works to improve research operations at J-PAL, with a focus on research resources and knowledge sharing across offices and projects. She leads J-PAL's research transparency work and coordinates processes related to J-PAL's affiliates. Sarah's research focuses on the relationship between agricultural input markets, input use, and production in Eastern and Southern Africa. Her field experience includes agro-ecological research in Malawi and qualitative work on a palm oil plantation in Cameroon. She holds a PhD in agricultural economics from Michigan State University and a BA in economics from Cornell University. Prior to graduate school, she served as a Peace Corps Volunteer in Senegal for two years.
     linkedin: https://www.linkedin.com/in/sarah-kopper-67311222
+  - tag: schmutte
+    name: Ian Schmutte
+    affil: UGA
+    affiliation: University of Georgia
+    url: https://ianschmutte.org/
+    twitter: ianschmutte
+  - tag: connolly
+    name: Marie connolly
+    affil: UQAM
+    affiliation: Université du Québec à Montréal
 
     

@@ -19,14 +19,29 @@
     {% endif %}</div>
 
     {% if post.panelists %}<div class="confpeople"><i class="fa fa-users" aria-hidden="true"></i>Panelists: 
+      <div class="panelists"><ul>
     {% for tag in post.panelists %}
      <!-- {{ tag }} -->
       {% assign author = site.panelists | where: 'tag', tag | first %}
       {% if author %}
           <!-- {{ author }} -->
-          {% if author.url %}<a href="{{ author.url }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif %} 
-          ({{ author.affil }}){% endif %}{% unless forloop.last %},{% endunless %}
-    {% endfor %}</div>
-    {% endif %}
+          <li>{% if author.url %}<a href="{{ author.url }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif %} 
+          ({{ author.affil }}){% endif %} 
+          {% if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
+          {% if author.linkedin %}<a href="{{ author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>{% endif %}
+        </li>
+    {% endfor %}</ul></div></div>
+    {% endif %} <!-- end panelists -->
+    {% if post.moderator %}<div class="confpeople"><i class="fa fa-user" aria-hidden="true"></i>Moderator: 
+      
+        {% assign author = site.panelists | where: 'tag', post.moderator | first %}
+          {% if author %}
+              <!-- {{ author }} -->
+              {% if author.url %}<a href="{{ author.url }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif %} 
+              ({{ author.affil }}){% endif %} 
+              {% if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
+              {% if author.linkedin %}<a href="{{ author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>{% endif %}
+            
+        </div>
+      {% endif %}<!-- end moderator -->
     
-<div class="lead">{{ post.content }}</div>
