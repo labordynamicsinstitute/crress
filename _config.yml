@@ -209,8 +209,12 @@ panelists:
   - tag: swauger
     name: Shea Swauger
     affil: FPF
-    url: https://fpf.org/
+    url:  https://www.sheaswauger.com/
+    bio: |
+      Shea Swauger (he/him) is Senior Researcher for Data Sharing and Ethics at the Future of Privacy Forum. He leads initiatives to increase data sharing for research across industry and academia. He holds a BA in Philosophy, a Masters of Library Science, and is currently a PhD. student in Education and Critical Studies.
     affiliation: Future of Privacy Forum
+    twitter: SheaSwauger
+    linkedin: https://www.linkedin.com/in/shea-swauger-88343021b
   - tag: kopper
     name: Sarah Kopper
     affil: JPAL
