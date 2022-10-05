@@ -27,8 +27,8 @@
           <!-- {{ author }} -->
           <li>{% if author.url %}<a href="{{ author.url }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif %} 
           ({{ author.affil }}){% endif %} 
-          {% if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
-          {% if author.linkedin %}<a href="{{ author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>{% endif %}
+          {% if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter socialmediaicons" aria-hidden="true"></i></a>{% endif %}
+          {% if author.linkedin %}<a href="{{ author.linkedin }}"><i class="fa fa-linkedin socialmediaicons" aria-hidden="true"></i></a>{% endif %}
         </li>
     {% endfor %}</ul></div></div>
     {% endif %} <!-- end panelists -->
@@ -39,8 +39,8 @@
               <!-- {{ author }} -->
               {% if author.url %}<a href="{{ author.url }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif %} 
               ({{ author.affil }}){% endif %} 
-              {% if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
-              {% if author.linkedin %}<a href="{{ author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>{% endif %}
+              {% if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter socialmediaicons" aria-hidden="true"></i></a>{% endif %}
+              {% if author.linkedin %}<a href="{{ author.linkedin }}"><i class="fa fa-linkedin socialmediaicons" aria-hidden="true"></i></a>{% endif %}
             
         </div>
       {% endif %}<!-- end moderator -->

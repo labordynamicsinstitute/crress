@@ -198,3 +198,8 @@ p.copyright {
 .lead {
     margin-top: 20px;
 }
+
+.socialmediaicons  {
+    margin-right: 0px;
+    padding-right: 0px !important;
+}
