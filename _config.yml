@@ -201,6 +201,9 @@ panelists:
     name: Aleksandr Michuda
     affil: "Cornell University, Data Science"
     affiliation: "Cornell University, Center for Data Science for Enterprise and Society"
+    url: https://amichuda.github.io
+    bio: |
+      Aleksandr Michuda is an Assistant Research Professor at the Center for Data Science for Enterprise and Society with a joint appointment in the Department of Information Science and with the Dyson School of Applied Economics and Management. Aleksandr studies how machine learning and big data can be used to solve problems in development economics. He is particularly interested in the role of rideshare applications in transforming the labor market in emerging markets.    
   - tag: guimaraes
     name: "Paulo Guimarães"
     affil: "Banco de Portugal, BPLIM"
