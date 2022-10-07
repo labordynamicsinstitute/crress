@@ -94,7 +94,7 @@ projects:
       - weeden
       - sinclair
       - hoynes 
-#  - date: 2023-01-31
+# - date: 2023-01-31
 #    title: Is there a role for academic institutions to verify reproducibility?	
   - date: 2023-02-28	
     title: 'Institutional support: How do journal reproducibility verification services work?'
@@ -105,6 +105,7 @@ projects:
     moderator: michuda
   - date: 2023-04-25	
     title: 'Whether and How to integrate reproducibility into Social Science graduate education?' 
+    moderator: schmutte
   - date: 2023-05-30	
     title: Should funders require reproducible archives?
     moderator: vilhuber
@@ -116,6 +117,7 @@ projects:
     conference: CEA	(tentative)
     title: 'Reproducibility, confidentiality, and open data mandates'	
     content: 'Many granting agencies have adopted open data mandates. What is the interplay between reproducibility and those mandates? How can researchers be supported to meet those mandates, both in general, and specifically when data are confidential. At first glance, confidentiality and open data seem irreconciable, but could we find practices that both respect confidentiality and provide enough information and transparency to foster reproducibility?'
+    moderator: connolly
   - date: 2023-07-xx	
     conference: WEAI (tentative)
     title: 'Whether and How to integrate reproducibility into Social Science graduate education? (2nd round)' 
@@ -246,9 +248,13 @@ panelists:
     affiliation: University of Georgia
     url: https://ianschmutte.org/
     twitter: ianschmutte
+    bio: |
+      Ian Schmutte is Associate Professor in the Department of Economics in the Terry College of Business at the University of Georgia. He also holds an appointment as a research economist with the Center for Enterprise Dissemination - Disclosure Avoidance at the U.S. Census Bureau, is a Fellow of the Global Labor Organization and a Research Fellow with the Institute of Labor Economics (IZA). His research focuses on how regulations and social institutions affect earnings and job mobility.  He also studies data privacy, focusing on the trade-off between privacy and accuracy in the publication of official statistics.
   - tag: connolly
     name: Marie Connolly
     affil: UQAM
     affiliation: Université du Québec à Montréal
+    bio: |
+      Marie Connolly (Ph.D. 2007, Princeton University) is full professor at the Department of Economics and Vice-Dean for Research of the University of Quebec in Montreal's School of Management (ESG UQAM). Her research is primarily empirical and touches upon various topics in labor economics, such as intergenerational income mobility, the formation of human capital, the gender and family gap, women’s labor force participation and the evaluation of public policy. She currently serves as the Data Editor of the Canadian Journal of Economics.
 
     
