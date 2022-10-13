@@ -101,7 +101,7 @@ projects:
     content: 'When journals conduct active verification of replication packages, including accessing data and running code, how does that work?  Can journals with limited resources still assess reproducibility? What depth of verification is optimal? Do journals provide a clear indication of whether an article was successfully reproduced?'
     moderator: connolly
   - date: 2023-03-28	
-    title: 'Why can or should academic institutions publish replication packages?'
+    title: 'Why can or should research institutions publish replication packages?'
     moderator: michuda
   - date: 2023-04-25	
     title: 'Whether and How to integrate reproducibility into Social Science graduate education?' 
