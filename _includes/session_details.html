@@ -1,4 +1,4 @@
-<h2 id="session-{{ session_counter }}" class="section-heading">Session {% increment session_counter %}: {{ post.title }}{% if post.conference %} (at {{ post.conference }}){% endif %}</h2>
+<h2 class="section-heading">Session {% increment session_counter %}: {{ post.title }}{% if post.conference %} (at {{ post.conference }}){% endif %}</h2>
 
 <div class="confdate"><i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date }}{% if post.time %} **exceptionally** @ {{ post.time }}{% else %} @ {{ site.format_time }}{% endif %}</div>
 
