@@ -58,6 +58,7 @@ projects:
     title: Reproducibility and ethics - IRBs and beyond	
     content: "One of the most crucial dimensions that Institutional Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
     moderator: vilhuber
+    img: crress-session2.jpg
     registrationurl: https://cornell.zoom.us/webinar/register/WN_ScQW_0IATn-c81O-gIPg3g
     panelists: 
       - meyer 
@@ -69,6 +70,7 @@ projects:
     registrationurl: https://web.cvent.com/event/b75f2fe3-fe9a-4013-87b4-ef4c773517e5/
     content: "Panelists will discuss teaching reproducibility (TIER Protocol), the involvement of undergraduates for replications based on restricted-access data, and other topics. The session is in person at the Southern Economic Association." 
     time: '1:15 PM Eastern'
+    img: crress-session3.jpg
     moderator: schmutte
     panelists: 
       - diego 
@@ -78,7 +80,8 @@ projects:
     time: '12:15 PM Eastern'
     title: 'Reproducibility and confidential or proprietary data: can it be done?'	
     content: 'What happens to reproducibility when data are confidential or proprietary? Many journals can only ask that detailed access procedures be provided in a ReadMe file, but what mechanims could be used to conduct computational reproducibility checks on such data? Should authors temporarily share their data with the journal for the purposes of reproducibility verification, even if they are not part of the public data replication package? Is it feasible to use a network of "insiders" to run code provided as part of a data replication package to assess reproducibility? Could a "certified run" be used? '
-    moderator: tbd
+    img: crress-session4.jpg
+    moderator: michuda
     panelists:
       - vilhuber
       - guimaraes
@@ -89,6 +92,7 @@ projects:
   - date: 2023-01-31
     title: 'Disciplinary support: why is reproducibility not uniformly required across disciplines?'
     content: 	'Why do learned societies decide (or not) to implement data (and code) availability policies? What influences the level of enforcement, and the choice of "enforcer" (data editor, administrative staff, referees)? What are reasons NOT to require data sharing or code sharing?'
+    img: crress-session5.jpg
     moderator: vilhuber
     panelists:
       - weeden
@@ -108,6 +112,7 @@ projects:
     moderator: schmutte
   - date: 2023-05-30	
     title: Should funders require reproducible archives?
+    img: crress-session9.jpg
     moderator: vilhuber
     panelists: 
       - greenberg
