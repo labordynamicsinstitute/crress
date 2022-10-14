@@ -104,6 +104,9 @@ projects:
     title: 'Institutional support: How do journal reproducibility verification services work?'
     content: 'When journals conduct active verification of replication packages, including accessing data and running code, how does that work?  Can journals with limited resources still assess reproducibility? What depth of verification is optimal? Do journals provide a clear indication of whether an article was successfully reproduced?'
     moderator: connolly
+    panelists:
+      - perignon
+      - others
   - date: 2023-03-28	
     title: 'Why can or should research institutions publish replication packages?'
     moderator: michuda
@@ -265,5 +268,8 @@ panelists:
     url: http://connolly.uqam.ca/
     bio: |
       Marie Connolly (Ph.D. 2007, Princeton University) is full professor at the Department of Economics and Vice-Dean for Research of the University of Quebec in Montreal's School of Management (ESG UQAM). Her research is primarily empirical and touches upon various topics in labor economics, such as intergenerational income mobility, the formation of human capital, the gender and family gap, women’s labor force participation and the evaluation of public policy. She currently serves as the Data Editor of the Canadian Journal of Economics.
-
-    
+  - tag: perignon
+    name: Christophe Perignon
+    affil: HEC Paris
+    affiliation: HEC Paris and cascad
+  
