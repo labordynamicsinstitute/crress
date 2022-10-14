@@ -56,7 +56,7 @@ projects:
     youtube: https://youtu.be/-dc4xxCIeqQ
   - date: 2022-10-25	
     title: Reproducibility and ethics - IRBs and beyond	
-    content: "One of the most crucial dimensions that Internal Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
+    content: "One of the most crucial dimensions that Institutional Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
     moderator: vilhuber
     registrationurl: https://cornell.zoom.us/webinar/register/WN_ScQW_0IATn-c81O-gIPg3g
     panelists: 
