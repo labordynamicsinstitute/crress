@@ -115,7 +115,7 @@ projects:
     panelists:
       - macdonald
       - peer
-      - others
+      - butler
   - date: 2023-04-25	
     title: 'Whether and How to integrate reproducibility into Social Science graduate education?' 
     moderator: schmutte
