@@ -284,6 +284,10 @@ panelists:
     name: Christophe Perignon
     affil: HEC Paris
     affiliation: HEC Paris and cascad
+    url: https://people.hec.edu/perignon/
+    twitter: christoperignon
+    bio: |
+      Christophe Pérignon is Professor of Finance and Associate Dean for Research at HEC Paris, France. He holds a Ph.D. in Finance from the Swiss Finance Institute and was a Post-Doctoral Fellow at the University of California at Los Angeles (UCLA). Christophe is the founding director of cascad, a non-profit certification agency verifying the numerical reproducibility of academic research. Cascad works both with individual researchers (certification) and with academic journals (pre-publication checks).
   - tag: macdonald
     name: Graham MacDonald 
     affil: Urban
