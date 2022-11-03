@@ -110,7 +110,7 @@ projects:
     panelists:
       - perignon
       - greiner
-      - others
+      - christian
   - date: 2023-03-28	
     title: 'Why can or should research institutions publish replication packages?'
     moderator: michuda
@@ -306,3 +306,8 @@ panelists:
     name: Courtney Butler
     affil: KC FRB
     affiliation: Kansas City Federal Reserve Bank
+  - tag: christian
+    name: Thu-Mai Christian
+    affil: Odum
+    affiliation: The Odum Institute for Research in Social Science
+    url: https://odum.unc.edu/people/christian/
