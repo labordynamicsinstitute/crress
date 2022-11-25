@@ -41,11 +41,13 @@ navbar:
     link: "#projects"
   - title: Format
     link: "#format"
-  - title: Panelists
-    link: "/panelists.html"
+  - title: Slides
+    link: "https://osf.io/preprints/metaarxiv/discover?q=tags%3A(crress)"
+#  - title: Panelists
+#    link: "/panelists.html"
   - title: Contact
     link: "#contact"
-    
+
 # for the format page
 format_day: Tuesday
 format_time: '4:15 PM Eastern'
