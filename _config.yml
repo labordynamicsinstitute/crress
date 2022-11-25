@@ -33,7 +33,19 @@ social:
   - title: github
     url: https://github.com/labordynamicsinstitute/crress
 
-
+# navbar
+navbar:
+  - title: About
+    link: "#about"
+  - title: Sessions
+    link: "#projects"
+  - title: Format
+    link: "#format"
+  - title: Panelists
+    link: "/panelists.html"
+  - title: Contact
+    link: "#contact"
+    
 # for the format page
 format_day: Tuesday
 format_time: '4:15 PM Eastern'
