@@ -43,6 +43,8 @@ navbar:
     link: "#format"
   - title: Slides
     link: "https://osf.io/preprints/metaarxiv/discover?q=tags%3A(crress)"
+  - title: Videos
+    link: "https://www.youtube.com/watch?v=-dc4xxCIeqQ&list=PLdcNmwWYeA7XY35YV9zV8zPTbE7twjz4S"
 #  - title: Panelists
 #    link: "/panelists.html"
   - title: Contact
@@ -74,6 +76,7 @@ projects:
     moderator: vilhuber
     img: crress-session2.jpg
     registrationurl: https://cornell.zoom.us/webinar/register/WN_ScQW_0IATn-c81O-gIPg3g
+    youtube:  
     panelists: 
       - meyer 
       - swauger 
