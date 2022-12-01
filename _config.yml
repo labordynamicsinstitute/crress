@@ -101,9 +101,9 @@ projects:
     moderator: michuda
     registrationurl: https://cornell.zoom.us/webinar/register/WN_FBXngdCaSN67UEiZCKZU5Q
     panelists:
-      - vilhuber
-      - guimaraes
       - horton
+      - guimaraes
+      - vilhuber
 #  - date: 2023-01-07	
 #    conference: ASSA	
 #    title: 'Why should researchers worry about reproducibility? The Twitter version'
