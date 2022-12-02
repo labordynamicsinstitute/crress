@@ -34,9 +34,9 @@ h6 {
     text-align: center;
     color: #f8f8f8;
     /* background: url(../img/intro-bg.jpg) no-repeat center center; */
-    background: url({{ "/img/titles/LDI Conf CRRESS V1x1600.png" | absolute_url }}) no-repeat center center;
+    background: url({{ "/img/titles/titlebar_all_logos_white.jpeg" | absolute_url }}) no-repeat center center;
     background-size: contain;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .intro-message {
