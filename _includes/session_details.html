@@ -9,7 +9,7 @@
       {% else %}
          {% if post.conference %}
            <i class="fa fa-map-marker" aria-hidden="true"></i>{{ post.conference }}
-           {% if post.registrationurl %} (<a href="{{ post.registrationurl }}" alt="Registration link">Registration</a>)
+           {% if post.registrationurl %} (<a href="{{ post.registrationurl }}" alt="Registration link">Registration</a>) {% endif %}
         {% else %}
            {% if post.registrationurl %}<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Please <a href="{{ post.registrationurl }}" alt="Registration link">register to join us on Zoom.</a>
            {% else %}
@@ -38,9 +38,10 @@
           {% if author %}
               <!-- {{ author }} -->
               {% if author.url %}<a href="{{ author.url }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif %} 
-              ({{ author.affil }}){% endif %} 
+              ({{ author.affil }}) 
               {% if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter socialmediaicons" aria-hidden="true"></i></a>{% endif %}
               {% if author.linkedin %}<a href="{{ author.linkedin }}"><i class="fa fa-linkedin socialmediaicons" aria-hidden="true"></i></a>{% endif %}
+          {% endif %}
             
         </div>
       {% endif %}<!-- end moderator -->
