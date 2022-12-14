@@ -231,6 +231,7 @@ panelists:
     affil: "UC Berkeley, Economics"
     affiliation: "UC Berkeley and Berkeley Opportunity Lab"
     url: https://www.hilaryhoynes.com/
+    twitter: HilaryHoynes
   - tag: vilhuber
     name: "Lars Vilhuber"
     affil: "Cornell University, AEA Data Editor"
@@ -253,10 +254,13 @@ panelists:
     affiliation: "Cornell University, Department of Sociology"
     affil: "Cornell University, Sociology"
     url: https://sociology.cornell.edu/kim-weeden
+    twitter: WeedenKim
   - tag: sinclair
     name: "Betsy Sinclair"
     affil: "WashU, Political Science"
     affiliation: "Washington University in St. Louis, Political Science"
+    twitter: BetsySinclair1
+    url: https://sites.wustl.edu/betsysinclair/
   - tag: greenberg
     name: "Josh Greenberg"
     affiliation: "Alfred P. Sloan Foundation"
