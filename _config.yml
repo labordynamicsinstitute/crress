@@ -141,19 +141,15 @@ projects:
       - peer
       - butler
   - date: 2023-04-25	
-    title: 'Whether and How to integrate reproducibility into Social Science graduate education?' 
-    moderator: schmutte
-    # registrationurl: https://cornell.zoom.us/webinar/register/WN_oe5Uiyx1Q-ipVdePSgbotw
-  - date: 2023-05-30	
     title: Should funders require reproducible archives?
     img: crress-session9.jpg
     moderator: vilhuber
-    registrationurl: https://cornell.zoom.us/webinar/register/WN_4Km3W2dNQNK1mJ9U8Ah-GA
+    #registrationurl: https://cornell.zoom.us/webinar/register/WN_4Km3W2dNQNK1mJ9U8Ah-GA
     panelists: 
       - greenberg
       - martinez
       - buck
-  - date: 2023-06-xx	
+  - date: 2023-05-30	
     conference: CEA	(tentative)
     title: 'Reproducibility, confidentiality, and open data mandates'	
     content: 'Many granting agencies have adopted open data mandates. What is the interplay between reproducibility and those mandates? How can researchers be supported to meet those mandates, both in general, and specifically when data are confidential. At first glance, confidentiality and open data seem irreconciable, but could we find practices that both respect confidentiality and provide enough information and transparency to foster reproducibility?'
@@ -161,7 +157,11 @@ projects:
   - date: 2023-07-xx	
     conference: WEAI (tentative)
     title: 'Whether and How to integrate reproducibility into Social Science graduate education? (2nd round)' 
-
+  - date: 2023-06-xx	
+    title: 'Whether and How to integrate reproducibility into Social Science graduate education?' 
+    moderator: schmutte
+    # registrationurl: https://cornell.zoom.us/webinar/register/WN_oe5Uiyx1Q-ipVdePSgbotw
+  
 panelists:
   - tag: imbens
     name: "Guido Imbens"
