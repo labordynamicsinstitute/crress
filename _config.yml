@@ -144,7 +144,7 @@ projects:
     title: Should funders require reproducible archives?
     img: crress-session8-tmp.jpg
     moderator: vilhuber
-    #registrationurl: https://cornell.zoom.us/webinar/register/WN_4Km3W2dNQNK1mJ9U8Ah-GA
+    registrationurl: https://cornell.zoom.us/webinar/register/WN_4Km3W2dNQNK1mJ9U8Ah-GA
     panelists: 
       - greenberg
       - martinez
