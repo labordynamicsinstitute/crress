@@ -155,6 +155,11 @@ projects:
     title: 'Reproducibility, confidentiality, and open data mandates'	
     content: 'Many granting agencies have adopted open data mandates. What is the interplay between reproducibility and those mandates? How can researchers be supported to meet those mandates, both in general, and specifically when data are confidential. At first glance, confidentiality and open data seem irreconciable, but could we find practices that both respect confidentiality and provide enough information and transparency to foster reproducibility?'
     moderator: connolly
+    time: 'TBD'
+    panelists: 
+      - mcgrail
+      - taylor
+      - tbd
   - date: 2023-07-xx	
     conference: WEAI (tentative)
     title: 'Whether and How to integrate reproducibility into Social Science graduate education? (2nd round)' 
@@ -341,3 +346,11 @@ panelists:
     affil: Odum
     affiliation: The Odum Institute for Research in Social Science
     url: https://odum.unc.edu/people/christian/
+  - tag: taylor
+    name: S. Martin Taylor
+    affil: McMaster
+    affiliation: McMaster University
+  - tag: mcgrail
+    name: Kimberly McGrail
+    affil: UBC
+    affiliation: University of British Columbia
