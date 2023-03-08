@@ -148,20 +148,22 @@ projects:
     img: crress-session8.jpg
     moderator: vilhuber
     registrationurl: https://cornell.zoom.us/webinar/register/WN_4Km3W2dNQNK1mJ9U8Ah-GA
+    content: 'Both private and government funders of academic research have been increasingly requiring that data collected or created as part of funded research be made openly available. However, it is still rare that this requirement extends to computational artifacts, such as code, and even more rare that computational reproducibility is required. The panelists all work for funders, and have experience with various funding models and approaches. But only one of them currently enforces computational reproducibility of funded research.
     panelists: 
       - greenberg
       - martinez
       - buck
   - date: 2023-05-30	
-    conference: CEA	(tentative)
+    conference: CEA
     title: 'Reproducibility, confidentiality, and open data mandates'	
-    content: 'Many granting agencies have adopted open data mandates. What is the interplay between reproducibility and those mandates? How can researchers be supported to meet those mandates, both in general, and specifically when data are confidential. At first glance, confidentiality and open data seem irreconciable, but could we find practices that both respect confidentiality and provide enough information and transparency to foster reproducibility?'
+    content: 'Many granting agencies have adopted open data mandates. What is the interplay between reproducibility and those mandates? How can researchers be supported to meet those mandates, both in general, and specifically when data are confidential. At first glance, confidentiality and open data seem irreconciable, but could we find practices that both respect confidentiality and provide enough information and transparency to foster reproducibility? *NOTE: Session is part of the annual CEA conference, online day. A (free) recording will be made available after the conference.*'
     moderator: connolly
-    time: 'TBD'
+    time: '10:30 am Central'
+    registrationurl: https://www.economics.ca/events/online-registration-57th-annual-canadian-economics-association-meetings
     panelists: 
       - mcgrail
       - taylor
-      - tbd
+      - lucas
 # - date: 2023-07-xx	
 #    conference: WEAI (tentative)
 #    title: 'Whether and How to integrate reproducibility into Social Science graduate education? (2nd round)' 
@@ -175,6 +177,8 @@ projects:
       - tbd
     # registrationurl: https://cornell.zoom.us/webinar/register/WN_oe5Uiyx1Q-ipVdePSgbotw
   
+  
+# =============================================================================================================
 panelists:
   - tag: imbens
     name: "Guido Imbens"
@@ -371,3 +375,7 @@ panelists:
     affiliation: University of Illinois
     url: http://www.julianreif.com/
     twitter: JulianReif
+  - tag: lucas
+    name: Matthew Lucas
+    affil: SSHRC
+    affiliation: Social Sciences and Humanities Research Council of Canada
