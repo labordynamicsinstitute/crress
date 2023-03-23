@@ -352,6 +352,10 @@ panelists:
     name: Courtney Butler
     affil: KC FRB
     affiliation: Kansas City Federal Reserve Bank
+    url: https://www.kansascityfed.org/research-staff/courtney-r-butler/
+    linkedin: https://www.linkedin.com/in/butlercourtney9
+    bio: |
+      Courtney Butler is the Data Management Strategist in the Data Utility Office at the Federal Reserve Bank of Kansas City. She previously oversaw reproducibility and data management efforts within the Economic Research Division, and she now leads data management efforts for the broader Kansas City Fed with a continued focus on transparency, collaboration, and practical adoption of best practices. 
   - tag: christian
     name: Thu-Mai Christian
     affil: Odum
