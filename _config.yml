@@ -282,6 +282,10 @@ panelists:
     name: "Josh Greenberg"
     affiliation: "Alfred P. Sloan Foundation"
     affil: Sloan Foundation
+    url: https://sloan.org/about/staff/joshua-m-greenberg
+    twitter: epistemographer
+    bio: |
+      Joshua M. Greenberg is director of the Alfred P. Sloan Foundation's Digital Information Technology program. He has broad experience and understanding of the content and research needs of traditional scholarly communities as well as digitally-networked services and tools to support myriad forms of public engagement and participation.
   - tag: horton
     name: John Horton
     url: https://john-joseph-horton.com/
