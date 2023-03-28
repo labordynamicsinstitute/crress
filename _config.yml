@@ -196,6 +196,7 @@ panelists:
     affil: SMU and Economic Inquiry
     affiliation: Professor of Economics at SMU and Editor of Economic Inquiry
     twitter: tsalmon_econ
+    slides: http://dx.doi.org/10.31222/OSF.IO/DU8N5
   - tag: whited 
     name: "Toni Whited"
     bio: |
@@ -213,6 +214,7 @@ panelists:
     linkedin: https://www.linkedin.com/in/michelle-n-meyer-b6754351
     bio: |
       Michelle N. Meyer is an associate professor and the associate director for research ethics in the Research Institute of Geisinger Health System. In addition to ethical and legal analysis, she conducts empirical research on people's judgments and decision-making regarding aspects of science (such as experimentation and data sharing), and is also the faculty co-director of Geisinger's Behavioral Insights Team, a "nudge unit" that conducts large pragmatic trials of behavioral interventions. She earned her PhD in religious studies (with a focus on applied ethics) from the University of Virginia and her JD from Harvard Law School.
+    slides: http://dx.doi.org/10.31222/OSF.IO/UKADC
   - tag: others
     name: "Others"
     affil: "TBD"
@@ -223,6 +225,7 @@ panelists:
     name: "Diego Mendez-Carbajo"
     affil: "St. Louis Fed"
     affiliation: "Federal Reserve Bank of St. Louis"
+    slides: http://dx.doi.org/10.31222/OSF.IO/KJQAW
   - tag: ball
     name: "Richard Ball"
     affil: "Project TIER"
@@ -255,6 +258,9 @@ panelists:
     affiliation: "Cornell University and Data Editor for the American Economic Association"
     url: https://lars.vilhuber.com
     twitter: larsvil
+    slides: 
+      session-3: http://dx.doi.org/10.31222/OSF.IO/ATFNX
+      session-4: http://dx.doi.org/10.31222/OSF.IO/VSJ8U
   - tag: michuda
     name: Aleksandr Michuda
     affil: "Cornell University, Data Science"
@@ -266,6 +272,7 @@ panelists:
     name: "Paulo Guimarães"
     affil: "Banco de Portugal, BPLIM"
     affiliation: "Banco de Portugal, BPLIM"
+    slides: http://dx.doi.org/10.31222/OSF.IO/P9M8W
   - tag: weeden
     name: "Kim Weeden"
     affiliation: "Cornell University, Department of Sociology"
@@ -294,6 +301,7 @@ panelists:
     affil: MIT
     twitter: johnjhorton
     affiliation: MIT Sloan School of Management and NBER
+    slides: http://dx.doi.org/10.31222/OSF.IO/B4S7Y
   - tag: swauger
     name: Shea Swauger
     affil: FPF
@@ -311,6 +319,7 @@ panelists:
     bio: |
       Sarah Kopper is the Associate Director of Research at J-PAL Global at MIT. She works to improve research operations at J-PAL, with a focus on research resources and knowledge sharing across offices and projects. She leads J-PAL's research transparency work and coordinates processes related to J-PAL's affiliates. Sarah's research focuses on the relationship between agricultural input markets, input use, and production in Eastern and Southern Africa. Her field experience includes agro-ecological research in Malawi and qualitative work on a palm oil plantation in Cameroon. She holds a PhD in agricultural economics from Michigan State University and a BA in economics from Cornell University. Prior to graduate school, she served as a Peace Corps Volunteer in Senegal for two years.
     linkedin: https://www.linkedin.com/in/sarah-kopper-67311222
+    slides: http://dx.doi.org/10.31222/OSF.IO/G6QFJ
   - tag: schmutte
     name: Ian Schmutte
     affil: UGA
