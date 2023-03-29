@@ -153,6 +153,7 @@ projects:
       - greenberg
       - martinez
       - buck
+      - halbert
   - date: 2023-05-30	
     conference: CEA
     title: 'Reproducibility, confidentiality, and open data mandates'	
@@ -402,3 +403,7 @@ panelists:
     affiliation: Stanford University 
     twitter: jeremyfreese
     url: http://www.boydetective.net/
+  - tag: halbert
+    name: Martin Halbert
+    affil: NSF
+    affiliation: National Science Foundation
