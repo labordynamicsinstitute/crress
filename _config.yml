@@ -151,9 +151,9 @@ projects:
     registrationurl: https://cornell.zoom.us/webinar/register/WN_4Km3W2dNQNK1mJ9U8Ah-GA
     content: 'Both private and government funders of academic research have been increasingly requiring that data collected or created as part of funded research be made openly available. However, it is still rare that this requirement extends to computational artifacts, such as code, and even more rare that computational reproducibility is required. The panelists all work for funders, and have experience with various funding models and approaches. But only one of them currently enforces computational reproducibility of funded research.'
     panelists: 
+      - halbert
       - martinez
       - buck
-      - halbert
   - date: 2023-05-30	
     conference: CEA
     title: 'Reproducibility, confidentiality, and open data mandates'	
