@@ -41,6 +41,8 @@ navbar:
     link: "#projects"
   - title: Format
     link: "#format"
+  - title: Texts
+    link: "https://labordynamicsinstitute.github.io/crress-book/"
   - title: Slides
     link: "https://osf.io/preprints/metaarxiv/discover?q=tags%3A(crress)"
   - title: Videos
