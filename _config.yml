@@ -158,6 +158,7 @@ projects:
       - buck
   - date: 2023-05-30	
     conference: CEA
+    img: crress-session9.jpg
     title: 'Reproducibility, confidentiality, and open data mandates'	
     content: 'Many granting agencies have adopted open data mandates. What is the interplay between reproducibility and those mandates? How can researchers be supported to meet those mandates, both in general, and specifically when data are confidential. At first glance, confidentiality and open data seem irreconciable, but could we find practices that both respect confidentiality and provide enough information and transparency to foster reproducibility? *NOTE: Session is part of the annual CEA conference, online day. A (free) recording will be made available after the conference.*'
     moderator: connolly
