@@ -151,7 +151,7 @@ projects:
     img: crress-session8.jpg
     moderator: vilhuber
     registrationurl: https://cornell.zoom.us/webinar/register/WN_4Km3W2dNQNK1mJ9U8Ah-GA
-    youtube: https://www.youtube.com/watch?v=wMP_stOFFNc
+    youtube: https://youtu.be/sqDzOpOImFg
     content: 'Both private and government funders of academic research have been increasingly requiring that data collected or created as part of funded research be made openly available. However, it is still rare that this requirement extends to computational artifacts, such as code, and even more rare that computational reproducibility is required. The panelists all work for funders, and have experience with various funding models and approaches. But only one of them currently enforces computational reproducibility of funded research.'
     panelists: 
       - halbert
