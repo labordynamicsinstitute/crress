@@ -164,14 +164,11 @@ projects:
     content: 'Many granting agencies have adopted open data mandates. What is the interplay between reproducibility and those mandates? How can researchers be supported to meet those mandates, both in general, and specifically when data are confidential. At first glance, confidentiality and open data seem irreconciable, but could we find practices that both respect confidentiality and provide enough information and transparency to foster reproducibility? *NOTE: Session is part of the annual CEA conference, online day. A (free) recording will be made available after the conference.*'
     moderator: connolly
     time: '10:30 am Central'
-    registrationurl: https://www.economics.ca/events/online-registration-57th-annual-canadian-economics-association-meetings
+    #registrationurl: https://www.economics.ca/events/online-registration-57th-annual-canadian-economics-association-meetings
     panelists: 
       - mcgrail
       - taylor
       - lucas
-# - date: 2023-07-xx	
-#    conference: WEAI (tentative)
-#    title: 'Whether and How to integrate reproducibility into Social Science graduate education? (2nd round)' 
   - date: 2023-06-27	
     title: 'The integration of reproducibility into social science graduate education.' 
     moderator: schmutte
@@ -179,7 +176,7 @@ projects:
     panelists: 
       - reif 
       - freese
-      - tbd
+      - wasser 
     registrationurl: https://cornell.zoom.us/webinar/register/WN_V2bS2o0bQh2rMxuXe-KW0A
   
   
@@ -412,3 +409,12 @@ panelists:
     name: Martin Halbert
     affil: NSF
     affiliation: National Science Foundation
+  - tag: wasser
+    name: David wasser
+    affil: Cornell
+    affiliation: Cornell University
+    twitter: 
+    linkedin: https://www.linkedin.com/in/davidwasser
+    url: https://www.davidnwasser.com/
+    bio: |
+      David Wasser is an economist studying labor markets and inequality. He received his PhD from Cornell University in 2023. Later this year, he will join the U.S. Census Bureau.
