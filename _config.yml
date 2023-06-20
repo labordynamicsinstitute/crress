@@ -171,6 +171,7 @@ projects:
       - lucas
   - date: 2023-06-27	
     title: 'The integration of reproducibility into social science graduate education.' 
+    img: crress-session10.jpg
     moderator: schmutte
     content: 'Incorporating reproducibility into the graduate curriculum is very appealing, since training early career scholars speeds the adoption of new research practices. However, adding new material to the graduate curriculum comes at a cost, since time spent learning the principles and practice of reproducibility requires effort that could be spent in other activities. With this in mind, should reproducibility be part of the core curriculum for doctoral students, taught as part of specialized methods courses, or just be available for those who seek it out? What are best practices for teaching reproducibility to graduate students? If they were included in the graduate curriculum, where might they fit and what might they replace?'
     panelists: 
