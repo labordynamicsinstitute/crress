@@ -165,6 +165,7 @@ projects:
     moderator: connolly
     time: '10:30 am Central'
     #registrationurl: https://www.economics.ca/events/online-registration-57th-annual-canadian-economics-association-meetings
+    youtube: https://www.youtube.com/watch?v=bMi0CNka1fQ
     panelists: 
       - mcgrail
       - taylor
