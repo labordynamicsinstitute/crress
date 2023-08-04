@@ -201,6 +201,7 @@ panelists:
     affiliation: Professor of Economics at SMU and Editor of Economic Inquiry
     twitter: tsalmon_econ
     slides: http://dx.doi.org/10.31222/OSF.IO/DU8N5
+    hdsr: https://doi.org/10.1162/99608f92.db2a2554
   - tag: whited 
     name: "Toni Whited"
     bio: |
@@ -209,6 +210,7 @@ panelists:
     affil: University of Michigan and Journal of Financial Economics
     affiliation: Ross School of Business at the University of Michigan and Editor of Journal of Financial Economics
     twitter: toniwhited
+    hdsr: https://doi.org/10.1162/99608f92.63de8e58
   - tag: meyer
     name: "Michelle N. Meyer"
     affil: "Geisinger"
@@ -230,10 +232,12 @@ panelists:
     affil: "St. Louis Fed"
     affiliation: "Federal Reserve Bank of St. Louis"
     slides: http://dx.doi.org/10.31222/OSF.IO/KJQAW
+    hdsr: https://doi.org/10.1162/99608f92.c2835391
   - tag: ball
     name: "Richard Ball"
     affil: "Project TIER"
     affiliation: "Haverford College and Project TIER"
+    hdsr: https://doi.org/10.1162/99608f92.9e002f7b
   - tag: buck 
     name: Stuart Buck
     affil: "Good Science Project"
@@ -256,6 +260,7 @@ panelists:
     affiliation: "UC Berkeley and Berkeley Opportunity Lab"
     url: https://www.hilaryhoynes.com/
     twitter: HilaryHoynes
+    hdsr: https://doi.org/10.1162/99608f92.80a1b88b
   - tag: vilhuber
     name: "Lars Vilhuber"
     affil: "Cornell University, AEA Data Editor"
@@ -265,6 +270,7 @@ panelists:
     slides: 
       session-3: http://dx.doi.org/10.31222/OSF.IO/ATFNX
       session-4: http://dx.doi.org/10.31222/OSF.IO/VSJ8U
+    hdsr: https://doi.org/10.1162/99608f92.9ba2bd43
   - tag: michuda
     name: Aleksandr Michuda
     affil: "Cornell University, Data Science"
@@ -277,6 +283,7 @@ panelists:
     affil: "Banco de Portugal, BPLIM"
     affiliation: "Banco de Portugal, BPLIM"
     slides: http://dx.doi.org/10.31222/OSF.IO/P9M8W
+    hdsr: https://doi.org/10.1162/99608f92.54a00239
   - tag: weeden
     name: "Kim Weeden"
     affiliation: "Cornell University, Department of Sociology"
@@ -354,6 +361,7 @@ panelists:
     url: https://www.urban.org/author/graham-macdonald
     twitter: grahamimac
     linkedin: https://www.linkedin.com/in/graham-macdonald-a1124510
+    hdsr: https://doi.org/10.1162/99608f92.a631dfc5
   - tag: greiner
     name: Ben Greiner 
     url: http://ben.orsee.org/
@@ -371,6 +379,7 @@ panelists:
     affiliation: Kansas City Federal Reserve Bank
     url: https://www.kansascityfed.org/research-staff/courtney-r-butler/
     linkedin: https://www.linkedin.com/in/butlercourtney9
+    hdsr: https://doi.org/10.1162/99608f92.aba61304
     bio: |
       Courtney Butler is the Data Management Strategist in the Data Utility Office at the Federal Reserve Bank of Kansas City. She previously oversaw reproducibility and data management efforts within the Economic Research Division, and she now leads data management efforts for the broader Kansas City Fed with a continued focus on transparency, collaboration, and practical adoption of best practices. 
   - tag: christian
