@@ -41,6 +41,8 @@ navbar:
     link: "#projects"
   - title: Format
     link: "#format"
+  - title: Publications
+    link: "https://hdsr.mitpress.mit.edu/reinforcing-rr"
   - title: Texts
     link: "https://labordynamicsinstitute.github.io/crress-book/"
   - title: Slides
