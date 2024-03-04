@@ -27,6 +27,9 @@ include:
 # ----------------------- #
 
 social:
+  - title: CDSES
+    icon: home
+    url: https://datasciencecenter.cornell.edu/
   - title: LDI
     icon: home
     url: https://ilr.cornell.edu/ldi
@@ -76,6 +79,7 @@ projects:
     registrationurl: https://cornell.zoom.us/webinar/register/WN_948sOMSHTCub2kTESJNdKg
     img: crress-session1.png
     youtube: https://youtu.be/-dc4xxCIeqQ
+    archive: https://ecommons.cornell.edu/items/8a04e8c5-7b18-4f58-86d8-115b083f5204
   - date: 2022-10-25	
     title: Reproducibility and ethics - IRBs and beyond	
     content: "One of the most crucial dimensions that Institutional Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
@@ -83,6 +87,7 @@ projects:
     img: crress-session2.jpg
     registrationurl: https://cornell.zoom.us/webinar/register/WN_ScQW_0IATn-c81O-gIPg3g
     youtube:  https://www.youtube.com/watch?v=21JWZZrPyus
+    archive: https://ecommons.cornell.edu/items/2b1843bc-7a22-40cd-9607-9225c892aeae
     panelists: 
       - meyer 
       - swauger 
@@ -92,6 +97,7 @@ projects:
     conference: SEA
     registrationurl: https://web.cvent.com/event/b75f2fe3-fe9a-4013-87b4-ef4c773517e5/
     youtube: https://youtu.be/DkSkp5svRY4
+    archive: https://ecommons.cornell.edu/items/e746383f-4530-4e82-afb7-328ebeb6408d
     content: "Panelists will discuss teaching reproducibility (TIER Protocol), the involvement of undergraduates for replications based on restricted-access data, and other topics. The session is in person at the Southern Economic Association." 
     time: '1:15 PM Eastern'
     img: crress-session3.jpg
@@ -107,6 +113,7 @@ projects:
     img: crress-session4.jpg
     moderator: michuda
     youtube: https://www.youtube.com/watch?v=ChR_0_zmQwk
+    archive: https://ecommons.cornell.edu/items/f0352c1f-2d58-424d-b22c-3d53c37a5827
     registrationurl: https://cornell.zoom.us/webinar/register/WN_FBXngdCaSN67UEiZCKZU5Q
     panelists:
       - horton
@@ -122,6 +129,7 @@ projects:
     moderator: vilhuber
     registrationurl: https://cornell.zoom.us/webinar/register/WN_j2jSfsBnSdC-gWiCZqmEGg
     youtube: https://www.youtube.com/watch?v=WRwxOM15Zgk
+    archive: https://ecommons.cornell.edu/items/a7e97210-d681-4d13-92c3-dc80e8338f9d
     panelists:
       - weeden
       - sinclair
@@ -133,6 +141,7 @@ projects:
     content: 'When journals conduct active verification of replication packages, including accessing data and running code, how does that work?  Can journals with limited resources still assess reproducibility? What depth of verification is optimal? Do journals provide a clear indication of whether an article was successfully reproduced?'
     moderator: connolly
     youtube: https://youtu.be/a0iKa4gQiX8
+    archive: https://ecommons.cornell.edu/items/d076196a-48b7-4273-b0f4-e477a78b7ca8
     registrationurl: https://cornell.zoom.us/webinar/register/WN_qJmlolq_TPW79zvRXn2drg
     img: crress-session6.jpg
     panelists:
@@ -145,6 +154,7 @@ projects:
     img: crress-session7.jpg
     registrationurl: https://cornell.zoom.us/webinar/register/WN_HDmgG7fxQR-z5C4p7tsU0A
     youtube: https://www.youtube.com/watch?v=Rvpy49rjGeQ
+    archive: https://ecommons.cornell.edu/items/1f4c7162-03b2-4124-910b-fb4d114d3787
     content: "This session brings various perspectives together on how research institutions think about publishing replication packages themselves, i.e., not a journal or generalist repository. Panelists come from  a university with a specialized, university-centred data repository; from a Federal Reserve Bank with an active researcher community, and from a non-profit (non-academic) research institution. Each faces the requirements of varied internal researchers, external visibility, and differing audiences. The panelists can all speak to how a research institution makes decision about the degree of transparency, and how much of that to do with internal resources."
     panelists:
       - macdonald
@@ -156,6 +166,7 @@ projects:
     moderator: vilhuber
     registrationurl: https://cornell.zoom.us/webinar/register/WN_4Km3W2dNQNK1mJ9U8Ah-GA
     youtube: https://youtu.be/sqDzOpOImFg
+    archive: https://ecommons.cornell.edu/items/0253fdd2-f952-4a02-8e16-ffed3de4dd76
     content: 'Both private and government funders of academic research have been increasingly requiring that data collected or created as part of funded research be made openly available. However, it is still rare that this requirement extends to computational artifacts, such as code, and even more rare that computational reproducibility is required. The panelists all work for funders, and have experience with various funding models and approaches. But only one of them currently enforces computational reproducibility of funded research.'
     panelists: 
       - halbert
@@ -170,6 +181,7 @@ projects:
     time: '10:30 am Central'
     #registrationurl: https://www.economics.ca/events/online-registration-57th-annual-canadian-economics-association-meetings
     youtube: https://www.youtube.com/watch?v=bMi0CNka1fQ
+    archive: https://ecommons.cornell.edu/items/a741c5fd-6feb-474a-bb0b-3af86e0006fb
     panelists: 
       - mcgrail
       - taylor
@@ -184,6 +196,7 @@ projects:
       - freese
       - wasser
     youtube: https://www.youtube.com/watch?v=UC13HZ7hpOg
+    archive: https://ecommons.cornell.edu/items/ad7cdacd-5dbe-44a4-8aa1-935a181b9c40
     #registrationurl: https://cornell.zoom.us/webinar/register/WN_V2bS2o0bQh2rMxuXe-KW0A
   
   
