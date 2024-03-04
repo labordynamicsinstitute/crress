@@ -17,7 +17,11 @@
            {% endif %} <!-- end non-conference condition -->
         {% endif %} <!-- end post.conference condition -->
       {% endif %} <!-- end youtube condition --></div>
-
+      {% if post.archive %}
+      <div class="confpeople">
+      <i class="fa fa-database" aria-hidden="true"></i><a href="{{ post.archive }}" alt="Archive Link">Archived Recording</a>
+      </div>
+      {% endif %} <!-- end archive -->
     {% if post.panelists %}<div class="confpeople"><i class="fa fa-users" aria-hidden="true"></i>Panelists: 
       <div class="panelists"><ul>
     {% for tag in post.panelists %}
