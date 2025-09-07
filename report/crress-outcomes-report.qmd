@@ -1,0 +1,61 @@
+---
+title: "Conference on Reproducibility and Replicability in Economics and Social Sciences (CRRESS) Final Outcomes Report"
+author:
+  - name: "Aleksandr Michuda"
+    affiliation: "Swarthmore College"
+  - name: "Lars Vilhuber"
+    affiliation: "Cornell University"
+date: "2025-09-07"
+logo: ../img/cornell_seal_simple_web/cornell_seal_simple_b31b1b.svg
+format:
+  html: default
+  pdf: default
+bibliography: CRRESS.bib
+csl: chicago-author-date.csl
+---
+
+# Introduction
+
+Write your introduction here.
+
+# Methods
+
+Describe your methods here.
+
+# Audience
+
+
+# Discussion
+
+Discuss your findings here.
+
+# References
+
+```{r}
+# Load required libraries
+library(httr)
+library(jsonlite)
+library(readr)
+
+# Read the CSV file and extract DOIs
+crress_data <- read_csv("CRRESS.csv")
+dois <- na.omit(crress_data$DOI)
+
+doi_to_citations <- function(doi) {
+  # OpenAlex API expects DOI in URL-encoded format
+  url <- paste0("https://api.openalex.org/works/https://doi.org/", URLencode(doi, reserved=TRUE))
+  res <- tryCatch({
+    GET(url)
+  }, error = function(e) return(NULL))
+  if (is.null(res) || status_code(res) != 200) return(NA)
+  data <- fromJSON(content(res, as="text", encoding="UTF-8"))
+  return(data$cited_by_count)
+}
+
+# Query OpenAlex for each DOI (may take time if many DOIs)
+citation_counts <- sapply(dois, doi_to_citations)
+
+# Combine results
+doi_citations <- data.frame(DOI=dois, Citations=citation_counts)
+doi_citations
+```
