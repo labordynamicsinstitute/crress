@@ -10,13 +10,31 @@ logo: ../img/cornell_seal_simple_web/cornell_seal_simple_b31b1b.svg
 format:
   html: default
   pdf: default
-bibliography: CRRESS.bib
+bibliography: 
+  - references.bib
+  - CRRESS.bib
 csl: chicago-author-date.csl
+editor_options: 
+  chunk_output_type: console
 ---
 
 # Introduction
 
-Write your introduction here.
+The purpose of scientific publishing is the dissemination of robust research findings, exposing them to the scrutiny of peers. Key to this endeavor is documenting the provenance of those findings. Scientific practices during the course of research and subsequent publication, peer review, and dissemination practices and tools, all interact to (hopefully) enable a discourse about the veracity of scientific claims. 
+Whether or not one actually believes there is a "replication crisis" (see @FanelliPNAS2018 for a discussion), recent years have seen an increased emphasis on various methods that support improved provenance documentation. This includes pre-registration (Nosek et al. 2018; 2019), pre-analysis plans (Banerjee et al. 2020; Olken 2015), registered reports (Chambers 2014; Hardwicke and Ioannidis 2018; Journal of Development Economics 2019), greater availability of working papers and pre-prints in disciplines other than economics, statistics, and physics (see Vilhuber 2020 for a discussion), and increasingly more stringent journal policies surrounding data and code availability, including active review and verification of replication packages (Christian et al. 2018; Jacoby, Lafferty-Hess, and Christian 2017; Vilhuber 2019; Editors 2021).
+In what follows, we adopt the NASEM definition of [computational] reproducibility as "obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis" and replicability as “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” (National Academies of Sciences, Engineering, and Medicine 2019, ch. 3). We use “replication packages” to refer to those materials (data, computer code, and instructions) linked to a specific publication that facilitate the replication of the manuscript’s results by others, but should also be computationally reproducible. Note that the literature sometimes uses other definitions.
+The verification of replication packages, which includes not just checks of the computational reproducibility of the provided materials, but also verifies the documented data provenance and completeness of such materials, is not a magical solution that will solve the "replicability crisis." Replication packages may be reproducible, but wrong (see f.i. the recent discussion surrounding Simonsohn et al. 2021). It also faces educational and procedural barriers. Should journals, which act at the tail end of the scientific production process, be the verifiers of reproducibility, as some journals have been doing (Christian et al. 2018; Vilhuber 2021), or should verification be a natural part of the post-publication assessment by the scientific community, with non-reproducible articles being cited less (as claimed by Hamermesh 2007) or being retracted (Journal of Finance 2021)? Should scientists’ work be reproducible at every stage of the research process, even prior to submission to journals, and what does that imply for funding, for technical infrastructure, and for the training of undergraduate and graduate students? 
+The consensus on answers to these questions is still emerging, and needs to be discussed by all researchers in the discipline, as such a consensus will guide how disciplinary research is conducted. Most discussions on these topics, however, occur in workshops and conferences that are not the core disciplinary conferences attended by the typical social scientist, other than those specifically interested in reproducibility as a research topic. 
+The goal of the proposed webinar and conference series, which we will call “Conference on Reproducibility and Replicability in Economics and Social Sciences (CRRESS),” is to make these topics accessible to all researchers, by pulling them out of specialized conferences, and making them available to a broad audience, through a consistent and logical sequence of sessions. While we will endeavor to propose some of the sessions at general disciplinary conferences (see list of proposed sessions), CRRESS gives us an opportunity to be free of the oftentimes limited ability to have multiple sessions that focus on these topics accepted at general conferences. 
+The topics that CRRESS will cover are selected to inform researchers about themes, tools, infrastructure, and approaches that are not typically taught or learned in current or past curricula. The tentative list of topics and sessions is provided in Section (e), and is logically arranged as follows.
+
+## Intellectual Merit 
+
+The audience of the webinar and conference series will gain insights into the full gamut of topics related to the initiation of research, the conduct of research, the preparation of research for publication, and possibly the scrutiny after publication related to reproducibility and replicability. The topics chosen for the series are not usually part of disciplinary seminars or conferences, and are brought to a broader audience here for the first time. The availability of permanent artifacts (presentations, recordings, manuscripts) after the conference will allow this to be resource with persistent impacts. 
+
+## Broader Impacts
+
+The webinar and conference series will be available to any non-participant through persistent artifacts: videos, presentations, and manuscripts. Undergraduates, graduate students, and career researchers will be able to learn about best practices for transparent, reproducible scientifically sound research in the social sciences, greatly expanding the impact of the series. In turn, this will allow for research to be made more credible, perceived and verified as such by policy makers and a public that wishes to implement evidence-based policymaking. 
 
 # Methods
 
@@ -25,20 +43,126 @@ Describe your methods here.
 # Audience
 
 
-# Discussion
+# Outputs
 
-Discuss your findings here.
-
-# References
-
-```{r}
+```{r readdata,echo=FALSE,include=FALSE}
 # Load required libraries
 library(httr)
 library(jsonlite)
 library(readr)
+library(dplyr)
+library(stringr)
+library(knitr)
+
+rootdir <- here::here()
 
 # Read the CSV file and extract DOIs
 crress_data <- read_csv("CRRESS.csv")
+# read in Youtube analytics 
+youtube_data <- read_csv(file.path(rootdir,"Youtube","Table data.csv")) |>
+  # remove the text that precedes the first ":"
+  mutate(Title = sub(".*?: ", "", `Video title`),
+         Title = str_remove(Title,fixed(" (first cut)"))) |>
+  # prefix Content with "https://www.youtube.com/watch?v=" to then in the later table generate a link
+  mutate(URL = paste0("https://www.youtube.com/watch?v=",Content)) |>
+  select(Title,Views,Published = `Video publish time`,URL) |>
+  arrange(desc(Views))
+youtube_total <- youtube_data |> filter(is.na(Title)) |> pull(Views)
+youtube1      <- youtube_data |> filter(!is.na(Title)) |> filter(row_number()==1) |> pull(Title)
+youtube2      <- youtube_data |> filter(!is.na(Title)) |> filter(row_number()==2) |> pull(Title)
+youtube3      <- youtube_data |> filter(!is.na(Title)) |> filter(row_number()==3) |> pull(Title)
+
+# Read in registration data
+
+registrations <- read_csv(file.path("Zoom","Registration","Export April 2023.csv"))
+
+# Read in Zoom analytics. Iterate over all files in the directory ./Zoom/Attendance, and read the CSV files that have the word "Report" in their name
+zoom_files <- list.files(file.path(rootdir, "Zoom", "Attendance"), pattern = "*Report*\\.csv$", full.names = TRUE)
+zoom_data <- do.call(rbind, lapply(zoom_files, function(file) {
+  df <- read_csv(file,skip = 5)
+  names(df)
+  # Standardize column names
+  colnames(df) <- tolower(gsub(" ", "_", colnames(df)))
+  # Ensure required columns exist
+  if (!"name" %in% colnames(df)) df$name <- NA
+  if (!"email" %in% colnames(df)) df$email <- NA
+  if (!"join_time" %in% colnames(df)) df$join_time <- NA
+  if (!"leave_time" %in% colnames(df)) df$leave_time <- NA
+  if (!"duration" %in% colnames(df)) df$duration <- NA
+  # Add a column for the session name based on the file name
+  df$session <- tools::file_path_sans_ext(basename(file))
+  return(df)
+}))
+# Convert join_time and leave_time to POSIXct
+zoom_data$join_time <- as.POSIXct(zoom_data$join_time, format="%m/%d/%y %H:%M", tz="UTC")
+zoom_data$leave_time <- as.POSIXct(zoom_data$leave_time, format="%m/%d/%y %H:%M", tz="UTC")
+zoom_data$academic_discipline <- tolower(zoom_data$academic_discipline)
+# Some further cleaning
+zoom_data <- zoom_data |>
+  mutate(academic_discipline = case_when(
+    # string match for "economics"
+    str_detect(academic_discipline, "econ") ~ "economics",
+    str_detect(academic_discipline, "sociology") ~ "sociology",
+    str_detect(academic_discipline, "psychology") ~ "psychology",
+    str_detect(academic_discipline, "social science") ~ "social science",
+    str_detect(academic_discipline, "information") ~ "information science",
+    str_detect(academic_discipline, "librar") ~ "information science",
+    TRUE ~ academic_discipline
+  ))
+# Calculate duration in minutes if not already present
+zoom_data$duration <- as.numeric(difftime(zoom_data$leave_time, zoom_data$join_time, units="mins"))
+# Summarize total unique participants and average duration per session
+zoom_summary <- zoom_data %>%
+  group_by(session) %>%
+  summarize(unique_participants = n_distinct(email),
+            average_duration = mean(duration, na.rm=TRUE)) %>%
+  arrange(desc(unique_participants))
+# Overall summary
+total_unique_participants <- n_distinct(zoom_data$email)
+average_duration_overall <- mean(zoom_data$duration, na.rm=TRUE)
+
+
+```
+
+## Sessions
+
+Sessions were live-moderated by one of the organizers. A total of `r nrow(registrations)` people registered for at least one session.  Unfortunately, not all per-session live participant data was preserved. However, from the 5 sessions from which we did have information on live participants, between `r min(zoom_summary$unique_participants)` and `r max(zoom_summary$unique_participants)` attended each session. 
+
+## Recordings
+
+All sessions were recorded, and are available for immediate viewing on [Youtube](https://www.youtube.com/watch?v=-dc4xxCIeqQ&list=PLdcNmwWYeA7XY35YV9zV8zPTbE7twjz4S). The recordings are preserved at the [Cornell Library's eCommons](https://hdl.handle.net/1813/113399).[^ecommons] 
+
+```{r recordings_ecommons, results='asis', include=TRUE}
+# use the CRRESS data to compile a list with Title, authors (creators), data, and the hyperlink using the DOI, if present, and the URL if not.
+crress_data |> 
+  filter(`Item Type`=="videoRecording") |>
+  mutate(Title = ifelse(is.na(Title), "No title", Title),
+         Creators = ifelse(is.na(Author), "No authors", Author),
+         Link = ifelse(!is.na(DOI), paste0("https://doi.org/",DOI), ifelse(!is.na(Url), Url, "No link"))) |> 
+  select(Title, Creators, Date, Link) |> 
+  arrange(desc(Date)) |>
+  mutate(Entry = sprintf("- \"**%s**\" (%s). %s. [%s](%s)", Title, Date, Creators, Link, Link)) |> 
+  pull(Entry) |> 
+  cat(sep="\n")
+```
+
+On YouTube, the three most watched sessions were the sessions on "**`r youtube1`**", "**`r youtube2`**", and "**`r youtube3`**".
+
+```{r tableyoutube,results='asis', include=FALSE}
+# Format the first column as a link, using Title and the URL column
+# Display the table using kable
+youtube_data |> 
+  filter(!is.na(Title)) |> 
+  mutate(Title = sprintf("[%s](%s)", Title, URL)) |> 
+  select(Title, Views, Published) |> 
+  kable()
+```
+
+
+[^ecommons]: From the [eCommons Preservation Support page](https://guides.library.cornell.edu/ecommons/preservation): "Cornell University Library is committed to responsible and sustainable management of works deposited in eCommons and to ensuring long-term access to those works. [...]  Current long-term preservation strategies and technologies employed by eCommons are shaped by the Open Archival Information System (OAIS) reference model (ISO 14721:2012) and informed by relevant international standards and emerging best practices."
+
+
+```{r citations, echo=FALSE, include=FALSE}
 dois <- na.omit(crress_data$DOI)
 
 doi_to_citations <- function(doi) {
@@ -56,6 +180,11 @@ doi_to_citations <- function(doi) {
 citation_counts <- sapply(dois, doi_to_citations)
 
 # Combine results
-doi_citations <- data.frame(DOI=dois, Citations=citation_counts)
-doi_citations
+doi_citations <- data.frame(DOI=dois, Citations=citation_counts, row.names = NULL) |>
+# subtract two from each, as there are likely to be self-citations
+  mutate(Citations = max(0,Citations -2))
 ```
+
+
+# References
+
