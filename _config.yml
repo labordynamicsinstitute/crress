@@ -443,3 +443,17 @@ panelists:
     url: https://www.davidnwasser.com/
     bio: |
       David Wasser is an economist studying labor markets and inequality. He received his PhD from Cornell University in 2023. Later this year, he will join the U.S. Census Bureau.
+
+## Ignored files
+exclude:
+  - README.md
+  - README-theme.md
+  - LICENSE.md
+  - .gitignore
+  - .gitattributes
+  - .DS_Store
+  - CITATION.cff
+  - "*.sh"
+  - tmp
+  - report/*
+  - "!report/index.html"
