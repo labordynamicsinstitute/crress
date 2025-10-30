@@ -35,87 +35,32 @@ permissions:
 # we use a static ZIP, compiled on the PIs laptop.
 
 jobs:
-  unpac-website:
+  unpack-website:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+  
       - name: Unpack Pages ZIP
         run: |
           unzip ./crress-github-pages.zip -d website
           cd website 
           tar xvf artifact.tar
           rm artifact.tar
-          unzip 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-
-
-  compile-quarto:
-    runs-on: ubuntu-24.04
-    steps:
-
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Setup Pages
-      id: pages
-      uses: actions/configure-pages@v3
-  
-    # Let's do the Quarto
-    - name: Set up Quarto
-      uses: quarto-dev/quarto-actions/setup@v2
-    - name: Install R
-      uses: r-lib/actions/setup-r@v2
-      with:
-        r-version: '4.5.1'
-
-    - name: Install R Dependencies 
-      uses: r-lib/actions/setup-renv@v2
-      with:
-        cache-version: 1
-          
-    - name: Render Report
-      env:
-        QUARTO_PRINT_STACK: true
-      run: |
-        cd report
-        quarto render  
-
-
-    - name: Upload report Artifact
-      id: artifact-upload-report
-      uses: actions/upload-artifact@v4
-      with:
-          name: artifact-report
-          path: report/_html
-          retention-days: 1
-  deploy-all:
-    runs-on: ubuntu-22.04
-    needs: 
-      - compile-quarto
-    if: ${{ github.event.inputs.refresh_website == 'true' || github.event_name == 'push' }}
-    steps:
-    # Pull down both artifacts
-    
-    - name: Download HTML Artifacts
-      uses: actions/download-artifact@v4
-      with:
-            path: .
-            pattern: artifact-report
-    # Adjust this to reflect what you are posting
-    - name: Move stuff
-      run: |
-          ls -lR
-          mv artifact-report website
-    # Prepare the GitHub Pages action
-    - name: prepare GitHub Pages action
-      uses: actions/upload-pages-artifact@v3.0.1    
-      with:
-        path: ./website
+          tar xzvf ../crress-outcomes-report.tgz
+          [[ -d report ]] && rm -rf report
+          mv _html report
+      # Prepare the GitHub Pages action
+      - name: prepare GitHub Pages action
+        uses: actions/upload-pages-artifact@v3.0.1    
+        with:
+          path: ./website
   
   publish:
-    needs: deploy-all
+    needs: unpack-website
     if: ${{ github.event.inputs.refresh_website == 'true' || github.event_name == 'push' }}
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
@@ -133,20 +78,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 
-  preserve:
-    needs: compile-quarto
-    runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.create_deposit == 'true' }}
-    steps:
-    - name: Download quarto artifact
-      uses: actions/download-artifact@v4
-      with:
-        name: artifact-data
-        path: data
-    - name: Send data to Dataverse 
-      uses: larsvilhuber/dataverse-uploader@v1.7
-      with:
-        DATAVERSE_TOKEN: ${{secrets.DATAVERSE_TOKEN}}
-        DATAVERSE_SERVER: ${{secrets.DATAVERSE_SERVER}}
-        DATAVERSE_DATASET_DOI: ${{secrets.DATAVERSE_DATASET_DOI}}
-        GITHUB_DIR: data
+  
