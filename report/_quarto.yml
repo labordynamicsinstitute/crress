@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: _html
+website:
+  favicon: favicon.ico
+  navbar:
+    logo: cornell_seal_simple_black.png
+    background: primary
+    search: true
+    left:
+      - text: "Main Website"
+        href: https://labordynamicsinstitute.github.io/crress/
+      - text: "Youtube"
+        href: https://www.youtube.com/watch?v=-dc4xxCIeqQ&list=PLdcNmwWYeA7XY35YV9zV8zPTbE7twjz4S
+      - text: "Harvard Data Science Review"
+        href: https://hdsr.mitpress.mit.edu/reinforcing-rr 
+      - text: "Archives@Cornell"
+        href: https://hdl.handle.net/1813/113399
+      - text: "Archives@Zenodo"
+        href: https://doi.org/10.5281/zenodo.17477769
+  page-footer: 
+    left: "Copyright 2025, Aleksandr Michuda, Lars Vilhuber" 
+    right: 
+      - icon: github
+        href: https://github.com/labordynamicsinstitute/crress/
+format:
+  html: 
+    toc: true
+    toc-depth: 2
+    toc-location: left
+    number-sections: true
+    theme: lux
+    page-layout: full
+  pdf: default

@@ -6,58 +6,208 @@ author:
   - name: "Lars Vilhuber"
     affiliation: "Cornell University"
 date: "2025-09-07"
-logo: ../img/cornell_seal_simple_web/cornell_seal_simple_b31b1b.svg
-format:
-  html: default
-  pdf: default
 bibliography: 
   - references.bib
   - CRRESS.bib
+  - CRRESS-report.bib
 csl: chicago-author-date.csl
 editor_options: 
   chunk_output_type: console
 ---
 
+
+```{r setup, echo=FALSE, include=TRUE}
+rootdir <- here::here()
+datadir <- file.path(rootdir,"data")
+# create if necessary
+if (!dir.exists(datadir)) dir.create(datadir,recursive=TRUE)
+ymldir <- file.path(rootdir,"..")
+```
+
+> This final outcomes report is for [NSF Award #2217493](https://nsf.gov/awardsearch/show-award?AWD_ID=2217493).
+
+# Summary
+
+The Conference on Reproducibility and Replicability in Economics and the Social Sciences (CRRESS) was a series of virtual and in-person panels on the topics of reproducibility, replicability, and transparency in the social sciences. The purpose of scientific publishing is the dissemination of robust research findings, exposing them to the scrutiny of peers and other interested parties. Scientific articles should accurately and completely provide information on the origin and provenance of data and on the analytical and computational methods used. Yet in recent years, doubts about the adequacy of the information provided in scientific articles and their addenda have been voiced. The conferences  addressed various topics in this area: the initiation of research, the conduct of research, the preparation of research for publication, and the scrutiny after publication. Undergraduates, graduate students, and career researchers were able to learn about best practices for transparent, reproducible, and scientifically sound research in the social sciences. The materials produced during the conference series are permanently archived and freely available to all interested parties.
+
 # Introduction
 
 The purpose of scientific publishing is the dissemination of robust research findings, exposing them to the scrutiny of peers. Key to this endeavor is documenting the provenance of those findings. Scientific practices during the course of research and subsequent publication, peer review, and dissemination practices and tools, all interact to (hopefully) enable a discourse about the veracity of scientific claims. 
-Whether or not one actually believes there is a "replication crisis" (see @FanelliPNAS2018 for a discussion), recent years have seen an increased emphasis on various methods that support improved provenance documentation. This includes pre-registration (Nosek et al. 2018; 2019), pre-analysis plans (Banerjee et al. 2020; Olken 2015), registered reports (Chambers 2014; Hardwicke and Ioannidis 2018; Journal of Development Economics 2019), greater availability of working papers and pre-prints in disciplines other than economics, statistics, and physics (see Vilhuber 2020 for a discussion), and increasingly more stringent journal policies surrounding data and code availability, including active review and verification of replication packages (Christian et al. 2018; Jacoby, Lafferty-Hess, and Christian 2017; Vilhuber 2019; Editors 2021).
-In what follows, we adopt the NASEM definition of [computational] reproducibility as "obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis" and replicability as “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” (National Academies of Sciences, Engineering, and Medicine 2019, ch. 3). We use “replication packages” to refer to those materials (data, computer code, and instructions) linked to a specific publication that facilitate the replication of the manuscript’s results by others, but should also be computationally reproducible. Note that the literature sometimes uses other definitions.
-The verification of replication packages, which includes not just checks of the computational reproducibility of the provided materials, but also verifies the documented data provenance and completeness of such materials, is not a magical solution that will solve the "replicability crisis." Replication packages may be reproducible, but wrong (see f.i. the recent discussion surrounding Simonsohn et al. 2021). It also faces educational and procedural barriers. Should journals, which act at the tail end of the scientific production process, be the verifiers of reproducibility, as some journals have been doing (Christian et al. 2018; Vilhuber 2021), or should verification be a natural part of the post-publication assessment by the scientific community, with non-reproducible articles being cited less (as claimed by Hamermesh 2007) or being retracted (Journal of Finance 2021)? Should scientists’ work be reproducible at every stage of the research process, even prior to submission to journals, and what does that imply for funding, for technical infrastructure, and for the training of undergraduate and graduate students? 
+
+Whether or not one actually believes there is a "replication crisis" (see @FanelliPNAS2018 for a discussion), recent years have seen an increased emphasis on various methods that support improved provenance documentation. This includes pre-registration [@nosekPreregistrationRevolution2018; @nosekPreregistrationHardWorthwhile2019], pre-analysis plans [@banerjeePraiseModerationSuggestions2020; @olkenPromisesPerilsPreanalysis2015], registered reports [@hardwickeMappingUniverseRegistered2018; @chambersRegisteredReportsStep2014;@journalofdevelopmenteconomicsRegisteredReportsJDE2019], greater availability of working papers and pre-prints in disciplines other than economics, statistics, and physics [@vilhuberReproducibilityReplicabilityEconomics2020], and increasingly more stringent journal policies surrounding data and code availability, including active review and verification of replication packages [@JacobyInsideHigherEd2017; @ChristianInt.J.Digit.Curation2018; @editorsSupportingComputationalReproducibility2021; @10.1257/pandp.109.718].
+
+In what follows, we adopt the NASEM definition of [computational] reproducibility as "obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis" and replicability as “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” [@nasem2019,ch. 3]. We use “replication packages” to refer to those materials (data, computer code, and instructions) linked to a specific publication that facilitate the replication of the manuscript's results by others, but should also be computationally reproducible. Note that the literature sometimes uses other definitions.
+
+The verification of replication packages, which includes not just checks of the computational reproducibility of the provided materials, but also verifies the documented data provenance and completeness of such materials, is not a magical solution that will solve the "replicability crisis." Replication packages may be reproducible, but wrong (see f.i. the recent discussion surrounding Simonsohn et al. 2021). It also faces educational and procedural barriers. Should journals, which act at the tail end of the scientific production process, be the verifiers of reproducibility, as some journals have been doing [@10.1257/pandp.111.808; @ChristianInt.J.Digit.Curation2018], or should verification be a natural part of the post-publication assessment by the scientific community, with non-reproducible articles being cited less (as claimed by [@hamermeshViewpointReplicationEconomics2007] or being retracted [@journaloffinanceRetractedRiskManagement2021]? Should scientists’ work be reproducible at every stage of the research process, even prior to submission to journals, and what does that imply for funding, for technical infrastructure, and for the training of undergraduate and graduate students? 
 The consensus on answers to these questions is still emerging, and needs to be discussed by all researchers in the discipline, as such a consensus will guide how disciplinary research is conducted. Most discussions on these topics, however, occur in workshops and conferences that are not the core disciplinary conferences attended by the typical social scientist, other than those specifically interested in reproducibility as a research topic. 
-The goal of the proposed webinar and conference series, which we will call “Conference on Reproducibility and Replicability in Economics and Social Sciences (CRRESS),” is to make these topics accessible to all researchers, by pulling them out of specialized conferences, and making them available to a broad audience, through a consistent and logical sequence of sessions. While we will endeavor to propose some of the sessions at general disciplinary conferences (see list of proposed sessions), CRRESS gives us an opportunity to be free of the oftentimes limited ability to have multiple sessions that focus on these topics accepted at general conferences. 
-The topics that CRRESS will cover are selected to inform researchers about themes, tools, infrastructure, and approaches that are not typically taught or learned in current or past curricula. The tentative list of topics and sessions is provided in Section (e), and is logically arranged as follows.
 
-## Intellectual Merit 
+The goal of the  webinar and conference series, which we  called "Conference on Reproducibility and Replicability in Economics and Social Sciences (CRRESS)," was to make these topics accessible to all researchers, by pulling them out of specialized conferences, and making them available to a broad audience, through a consistent and logical sequence of sessions. CRRESS gave us an opportunity to be free of the oftentimes limited ability to have multiple sessions that focus on these topics accepted at general conferences. 
 
-The audience of the webinar and conference series will gain insights into the full gamut of topics related to the initiation of research, the conduct of research, the preparation of research for publication, and possibly the scrutiny after publication related to reproducibility and replicability. The topics chosen for the series are not usually part of disciplinary seminars or conferences, and are brought to a broader audience here for the first time. The availability of permanent artifacts (presentations, recordings, manuscripts) after the conference will allow this to be resource with persistent impacts. 
+The topics that CRRESS  covered were selected to inform researchers about themes, tools, infrastructure, and approaches that are not typically taught or learned in current or past curricula. The  list of topics and sessions is listed in [Sessions](#sessions).
 
-## Broader Impacts
+## Intellectual Merit (as originally stated)
 
-The webinar and conference series will be available to any non-participant through persistent artifacts: videos, presentations, and manuscripts. Undergraduates, graduate students, and career researchers will be able to learn about best practices for transparent, reproducible scientifically sound research in the social sciences, greatly expanding the impact of the series. In turn, this will allow for research to be made more credible, perceived and verified as such by policy makers and a public that wishes to implement evidence-based policymaking. 
+> The audience of the webinar and conference series will gain insights into the full gamut of topics related to the initiation of research, the conduct of research, the preparation of research for publication, and possibly the scrutiny after publication related to reproducibility and replicability. The topics chosen for the series are not usually part of disciplinary seminars or conferences, and are brought to a broader audience here for the first time. The availability of permanent artifacts (presentations, recordings, manuscripts) after the conference will allow this to be resource with persistent impacts. 
+
+## Broader Impacts (as originally stated)
+
+> The webinar and conference series will be available to any non-participant through persistent artifacts: videos, presentations, and manuscripts. Undergraduates, graduate students, and career researchers will be able to learn about best practices for transparent, reproducible scientifically sound research in the social sciences, greatly expanding the impact of the series. In turn, this will allow for research to be made more credible, perceived and verified as such by policy makers and a public that wishes to implement evidence-based policymaking. 
 
 # Methods
 
-Describe your methods here.
+We put together an organizing committee, composed of the PIs, Ian Schmutte (University of Georgia) and Marie Connolly (Université du Québec à Montréal, Canada). The committee organized 10 webinars over the course of the 2022-2023 academic year. They were broadly advertised through social media, email lists, and personal networks. Each session was moderated by one of organizers, and featured 2-3 panelists who presented on the topic of the session. Each session lasted approximately 90 minutes, with presentations lasting approximately 45 minutes, followed by a moderated discussion and Q&A from the audience. All sessions were recorded and made available on Youtube and archived in Cornell University's eCommons repository.
+
+## Sessions
+
+```{r sessions_from_config, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE, results='asis'}
+# Load required libraries for YAML parsing
+library(yaml)
+library(dplyr)
+library(knitr)
+
+# Read the YAML configuration file
+config <- yaml.load_file(file.path(ymldir, "_config.yml"))
+
+# Extract sessions from the projects section
+sessions_list <- lapply(config$projects, function(session) {
+  # Get panelist names
+  panelist_names <- sapply(session$panelists, function(tag) {
+    panelist <- config$panelists[[which(sapply(config$panelists, function(p) p$tag == tag))]]
+    if (!is.null(panelist$name)) return(panelist$name) else return(tag)
+  })
+
+  # Get moderator name
+  moderator_tag <- session$moderator
+  moderator <- config$panelists[[which(sapply(config$panelists, function(p) p$tag == moderator_tag))]]
+  moderator_name <- if (!is.null(moderator$name)) moderator$name else moderator_tag
+
+  # Combine participants
+  participants <- c(paste0("Moderator: ", moderator_name),
+                   paste0("Panelists: ", paste(panelist_names, collapse=", ")))
+
+  # Create session entry
+  data.frame(
+    Date = session$date,
+    Title = session$title,
+    Participants = paste(participants, collapse="; "),
+    Recording = ifelse(!is.null(session$youtube), session$youtube, "Not available"),
+    Archive = ifelse(!is.null(session$archive), session$archive, "Not available"),
+    stringsAsFactors = FALSE
+  )
+})
+
+# Combine into a single dataframe
+sessions_df <- bind_rows(sessions_list)
+
+# Display as a formatted list
+for (i in 1:nrow(sessions_df)) {
+  cat(sprintf("### Session %d: %s\n\n", i, sessions_df$Title[i]))
+  cat(sprintf("**Date:** %s\n\n", sessions_df$Date[i]))
+  cat(sprintf("**Participants:** %s\n\n", sessions_df$Participants[i]))
+  if (sessions_df$Recording[i] != "Not available") {
+    cat(sprintf("**Recording:** [YouTube](%s)\n\n", sessions_df$Recording[i]))
+  }
+  if (sessions_df$Archive[i] != "Not available") {
+    cat(sprintf("**Archive:** [eCommons](%s)\n\n", sessions_df$Archive[i]))
+  }
+  cat("\n")
+}
+```
+
 
 # Audience
 
+The audience are researchers, academic or otherwise, in the social sciences. Speakers were drawn from economics, sociology, political science, with affiliations in academia, think-tanks, government agencies and non-governmental funding organizations. The materials produced during the conference have been used and referenced in tutorials provided to undergraduate and graduate students in various workshops, and researchers at various presentations at academic conferences and  
 
 # Outputs
+
+## Web artifacts
+
+The Conference on Reproducibility and Replicability in Economics and the Social Sciences website is found at <https://labordynamicsinstitute.github.io/crress/> as of 2025-10-30. It will be maintained there indefinitely. The main page is preserved on the [Wayback Machine](https://web.archive.org/web/20250428200538/https://labordynamicsinstitute.github.io/crress/). The underlying Github repository <https://github.com/labordynamicsinstitute/crress/> is archived on Zenodo [@lars_vilhuber_2025_17477769] prior to the creation of this report. An update will include this report.
+
+## Online Book
+
+Various authors contributed written texts, which are available at <https://labordynamicsinstitute.github.io/crress-book/> as an online book. The book is preserved on the [Wayback Machine](https://web.archive.org/web/20251029182547/https://labordynamicsinstitute.github.io/crress-book/). The underlying Github repository <https://github.com/labordynamicsinstitute/crress-book> has been preserved on Zenodo [@michuda_2025_17477929]. 
+
+## Journal publications
+
+
+
+```{r citations, echo=FALSE, include=FALSE}
+library(readr)
+library(stringr)
+
+# CSV file extraced from PIs CRRESS Zotero library; see also CRRESS.bib
+# Read the CSV file and extract DOIs
+crress_data <- read_csv("CRRESS.csv")
+
+dois <- na.omit(crress_data$DOI)
+
+doi_to_citations <- function(doi) {
+  # OpenAlex API expects DOI in URL-encoded format
+  url <- paste0("https://api.openalex.org/works/https://doi.org/", URLencode(doi, reserved=TRUE))
+  res <- tryCatch({
+    GET(url)
+  }, error = function(e) return(NULL))
+  if (is.null(res) || status_code(res) != 200) return(NA)
+  data <- fromJSON(content(res, as="text", encoding="UTF-8"))
+  return(data$cited_by_count)
+}
+
+# query openAlex if the file is not there, otherwise, skip the query
+
+citation_counts_file <- file.path(datadir,"openalex_citations.rds")
+if (file.exists(citation_counts_file)) {
+  doi_citations <- readRDS(citation_counts_file)
+} else {
+  # Query OpenAlex for each DOI (may take time if many DOIs)
+  citation_counts <- sapply(dois, doi_to_citations)
+
+  # Combine results
+  doi_citations <- data.frame(DOI=dois, Citations=citation_counts, as_of_date = Sys.Date(), row.names = NULL)
+  # save results
+  saveRDS(doi_citations,citation_counts_file)
+}
+
+most_cited_count <- max(doi_citations$Citations)
+# merge back to crress_data to get title and authors
+most_cited_entry <- merge(doi_citations, crress_data, by="DOI") %>%
+  filter(Citations == most_cited_count) %>%
+  select(DOI, Title, Author, Citations) %>%
+  # get last name, by comma
+  mutate(Author_last = str_split_1(Author, ",")[1]) 
+
+
+```
+
+
+A number of the author contributions were organized into a special section of the Harvard Data Science Review (HDSR) in [Issue 5.3, Summer of 2023](https://hdsr.mitpress.mit.edu/volume5issue3), edited by the moderators of the webinar series Lars Vilhuber, Ian Schmutte, Aleksandr Michuda, and Marie Connolly [@vilhuber_reinforcing_2023]. Subsequently, PI Lars Vilhuber was designated as Column Editor for the (ongoing) HDSR column on [Reinforcing Reproducibility and Replicability](https://hdsr.mitpress.mit.edu/reinforcing-rr). 
+
+As of October 2025, the following articles have been published in the special section as well as the column, in addition to the aforementioned introduction: @ball_yes_2023;
+@buck_we_2024;
+@butler_publishing_2023;
+@guimaraes_reproducibility_2023;
+@hoynes_reproducibility_2023;
+@jones_introducing_2024;
+@macdonald_open_2023;
+@mendez-carbajo_data_2023;
+@ottone_code_2025;
+@peer_why_2024;
+@perignon_role_2024;
+@salmon_case_2023;
+@weeden_crisis_2023;
+@whited_costs_2023 . 
+
+Vilhuber continues, for now, to edit the column. The most cited article, `r most_cited_entry$Author_last`´s [`r most_cited_entry$Title`](https://doi.org/`r most_cited_entry$DOI`) has so far been cited `r most_cited_count` times.
+
 
 ```{r readdata,echo=FALSE,include=FALSE}
 # Load required libraries
 library(httr)
 library(jsonlite)
-library(readr)
 library(dplyr)
-library(stringr)
 library(knitr)
 
-rootdir <- here::here()
-
-# Read the CSV file and extract DOIs
-crress_data <- read_csv("CRRESS.csv")
 # read in Youtube analytics 
 youtube_data <- read_csv(file.path(rootdir,"Youtube","Table data.csv")) |>
   # remove the text that precedes the first ":"
@@ -67,12 +217,15 @@ youtube_data <- read_csv(file.path(rootdir,"Youtube","Table data.csv")) |>
   mutate(URL = paste0("https://www.youtube.com/watch?v=",Content)) |>
   select(Title,Views,Published = `Video publish time`,URL) |>
   arrange(desc(Views))
+# save as rds
+saveRDS(youtube_data,file.path(datadir,"youtube_data.rds"))
+
 youtube_total <- youtube_data |> filter(is.na(Title)) |> pull(Views)
 youtube1      <- youtube_data |> filter(!is.na(Title)) |> filter(row_number()==1) |> pull(Title)
 youtube2      <- youtube_data |> filter(!is.na(Title)) |> filter(row_number()==2) |> pull(Title)
 youtube3      <- youtube_data |> filter(!is.na(Title)) |> filter(row_number()==3) |> pull(Title)
 
-# Read in registration data
+# Read in registration data - these remain confidential!
 
 registrations <- read_csv(file.path("Zoom","Registration","Export April 2023.csv"))
 
@@ -117,22 +270,47 @@ zoom_summary <- zoom_data %>%
   summarize(unique_participants = n_distinct(email),
             average_duration = mean(duration, na.rm=TRUE)) %>%
   arrange(desc(unique_participants))
+# duration is always missing!
 # Overall summary
 total_unique_participants <- n_distinct(zoom_data$email)
 average_duration_overall <- mean(zoom_data$duration, na.rm=TRUE)
-
-
+# append overall summary to zoom_summary
+zoom_summary <- zoom_summary %>%
+  bind_rows(data.frame(session="Overall", unique_participants=total_unique_participants, average_duration=average_duration_overall))
+# save the dataset
+saveRDS(zoom_summary,file.path(datadir,"zoom_summary.rds"))
 ```
 
 ## Sessions
 
-Sessions were live-moderated by one of the organizers. A total of `r nrow(registrations)` people registered for at least one session.  Unfortunately, not all per-session live participant data was preserved. However, from the 5 sessions from which we did have information on live participants, between `r min(zoom_summary$unique_participants)` and `r max(zoom_summary$unique_participants)` attended each session. 
+Sessions were live-moderated by one of the organizers. A total of `r nrow(registrations)` people registered for at least one session.  Unfortunately, not all per-session live participant data was preserved. However, from the 5 sessions from which we did have information on live participants, between `r min(zoom_summary$unique_participants)` and `r max(zoom_summary$unique_participants)` attended each session. Presentation slides from most authors can be found on the [MetaArXiv OSF Preprint server](https://osf.io/preprints/metaarxiv/discover?search=crress), but are not otherwise preserved.
 
 ## Recordings
 
-All sessions were recorded, and are available for immediate viewing on [Youtube](https://www.youtube.com/watch?v=-dc4xxCIeqQ&list=PLdcNmwWYeA7XY35YV9zV8zPTbE7twjz4S). The recordings are preserved at the [Cornell Library's eCommons](https://hdl.handle.net/1813/113399).[^ecommons] 
+All sessions were recorded.
 
-```{r recordings_ecommons, results='asis', include=TRUE}
+### Youtube 
+
+Session recordings are available for immediate viewing on [Youtube](https://www.youtube.com/watch?v=-dc4xxCIeqQ&list=PLdcNmwWYeA7XY35YV9zV8zPTbE7twjz4S). 
+On YouTube, the three most watched sessions were the sessions on "**`r youtube1`**", "**`r youtube2`**", and "**`r youtube3`**". Youtube recordings are under a 
+[Creative Commons Attribution CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). Auto-generated captions are available.
+
+```{r tableyoutube,results='asis', include=TRUE, echo=FALSE}
+# Format the first column as a link, using Title and the URL column
+# Display the table using kable
+youtube_data |> 
+  filter(!is.na(Title)) |> 
+  mutate(Title = sprintf("[%s](%s)", Title, URL)) |> 
+  select(Title, Views, Published) |> 
+  kable()
+```
+
+### Curated Recordings
+
+The recordings are preserved at the [Cornell Library's eCommons](https://hdl.handle.net/1813/113399).[^ecommons] eCommons archives are also under a 
+[Creative Commons Attribution CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). The captions generated by Youtube are preserved as part of the eCommons deposit.
+
+```{r recordings_ecommons, results='asis', echo=FALSE, include=TRUE}
 # use the CRRESS data to compile a list with Title, authors (creators), data, and the hyperlink using the DOI, if present, and the URL if not.
 crress_data |> 
   filter(`Item Type`=="videoRecording") |>
@@ -146,44 +324,8 @@ crress_data |>
   cat(sep="\n")
 ```
 
-On YouTube, the three most watched sessions were the sessions on "**`r youtube1`**", "**`r youtube2`**", and "**`r youtube3`**".
-
-```{r tableyoutube,results='asis', include=FALSE}
-# Format the first column as a link, using Title and the URL column
-# Display the table using kable
-youtube_data |> 
-  filter(!is.na(Title)) |> 
-  mutate(Title = sprintf("[%s](%s)", Title, URL)) |> 
-  select(Title, Views, Published) |> 
-  kable()
-```
-
 
 [^ecommons]: From the [eCommons Preservation Support page](https://guides.library.cornell.edu/ecommons/preservation): "Cornell University Library is committed to responsible and sustainable management of works deposited in eCommons and to ensuring long-term access to those works. [...]  Current long-term preservation strategies and technologies employed by eCommons are shaped by the Open Archival Information System (OAIS) reference model (ISO 14721:2012) and informed by relevant international standards and emerging best practices."
-
-
-```{r citations, echo=FALSE, include=FALSE}
-dois <- na.omit(crress_data$DOI)
-
-doi_to_citations <- function(doi) {
-  # OpenAlex API expects DOI in URL-encoded format
-  url <- paste0("https://api.openalex.org/works/https://doi.org/", URLencode(doi, reserved=TRUE))
-  res <- tryCatch({
-    GET(url)
-  }, error = function(e) return(NULL))
-  if (is.null(res) || status_code(res) != 200) return(NA)
-  data <- fromJSON(content(res, as="text", encoding="UTF-8"))
-  return(data$cited_by_count)
-}
-
-# Query OpenAlex for each DOI (may take time if many DOIs)
-citation_counts <- sapply(dois, doi_to_citations)
-
-# Combine results
-doi_citations <- data.frame(DOI=dois, Citations=citation_counts, row.names = NULL) |>
-# subtract two from each, as there are likely to be self-citations
-  mutate(Citations = max(0,Citations -2))
-```
 
 
 # References
