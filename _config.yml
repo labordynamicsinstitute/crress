@@ -40,24 +40,18 @@ social:
 navbar:
   - title: About
     link: "#about"
+  - title: Report
+    link: "/report/"
   - title: Archive
-    link: "https://ecommons.cornell.edu/collections/90b9b044-4fa7-4dc2-9c84-ee9ebb8ab3d8"
-  - title: Zotero Library
-    link: https://www.zotero.org/groups/5130585/crress/library
-  - title: Sessions
-    link: "#projects"
-  - title: Format
-    link: "#format"
+    link: "https://hdl.handle.net/1813/113399"
   - title: Publications
     link: "https://hdsr.mitpress.mit.edu/reinforcing-rr"
   - title: Texts
     link: "https://labordynamicsinstitute.github.io/crress-book/"
   - title: Slides
-    link: "https://osf.io/preprints/metaarxiv/discover?q=tags%3A(crress)"
+    link: "https://osf.io/preprints/metaarxiv/discover?search=crress"
   - title: Videos
     link: "https://www.youtube.com/watch?v=-dc4xxCIeqQ&list=PLdcNmwWYeA7XY35YV9zV8zPTbE7twjz4S"
-#  - title: Panelists
-#    link: "/panelists.html"
   - title: Contact
     link: "#contact"
 

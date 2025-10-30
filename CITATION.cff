@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Conference on Reproducibility and Replicability in Economics and Social Sciences (CRRESS)"
+abstract: "The Conference on Reproducibility and Replicability in Economics and the Social Sciences (CRRESS) was a series of virtual and in-person panels on the topics of reproducibility, replicability, and transparency in the social sciences. The purpose of scientific publishing is the dissemination of robust research findings, exposing them to the scrutiny of peers and other interested parties. Scientific articles should accurately and completely provide information on the origin and provenance of data and on the analytical and computational methods used. Yet in recent years, doubts about the adequacy of the information provided in scientific articles and their addenda have been voiced. The conferences  addressed various topics in this area: the initiation of research, the conduct of research, the preparation of research for publication, and the scrutiny after publication. Undergraduates, graduate students, and career researchers were able to learn about best practices for transparent, reproducible, and scientifically sound research in the social sciences. The materials produced during the conference series are permanently archived and freely available to all interested parties."
+authors:
+  - family-names: "Vilhuber"
+    given-names: "Lars"
+    affiliation: "Cornell University"
+    email: "lars.vilhuber@cornell.edu"
+    orcid: "https://orcid.org/0000-0001-5733-8932"
+  - family-names: "Michuda"
+    given-names: "Aleksandr"
+    email: "amichuda@gmail.com"
+    affiliation: "Swarthmore College"
+    orcid: "https://orcid.org/0000-0001-6855-5107"
+  
+repository-code: "https://github.com/labordynamicsinstitute/crress"
+url: "https://labordynamicsinstitute.github.io/crress/"
+keywords:
+  - "reproducible research"
+  - "economics"
+  - "social science"
+  - "webinar series"
+  - "CRRESS"
+license: CC-BY-4.0
