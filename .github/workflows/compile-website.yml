@@ -47,11 +47,16 @@ jobs:
       - name: Unpack Pages ZIP
         run: |
           unzip ./crress-github-pages.zip -d website
-          cd website 
+          cd website
+          echo === Unpacking artifact tarball 
           tar xvf artifact.tar
+          ls -l
           rm artifact.tar
+          echo === Unzipping report tarball
           tar xzvf ../crress-outcomes-report.tgz
+          echo === Removing previous report directory
           [[ -d report ]] && rm -rf report
+          echo === Moving report to website/report
           mv _html report
       # Prepare the GitHub Pages action
       - name: prepare GitHub Pages action
