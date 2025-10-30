@@ -41,7 +41,7 @@ navbar:
   - title: About
     link: "#about"
   - title: Report
-    link: "/report/"
+    link: "report/"
   - title: Archive
     link: "https://hdl.handle.net/1813/113399"
   - title: Publications
