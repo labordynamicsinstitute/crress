@@ -1,0 +1,13 @@
+NSF Project Outcomes Report: CRRESS (Conference on Reproducibility and Replicability in Economics and Social Sciences)
+
+The Conference on Reproducibility and Replicability in Economics and the Social Sciences (CRRESS) was a series of virtual and in-person panels held during the 2022-2023 academic year. The project aimed to advance best practices in transparency, reproducibility, and replicability in the social sciences by bringing together researchers, students, and practitioners from diverse backgrounds. The conference addressed the growing need for robust documentation of research methods, data provenance, and computational workflows, responding to concerns about the adequacy of information provided in scientific publications.
+
+CRRESS featured ten sessions, each moderated by an organizer and including 2-3 expert panelists. Topics covered included pre-registration, pre-analysis plans, registered reports, journal policies on data and code availability, and the verification of replication packages. The sessions were widely advertised and attended by participants from academia, government, and non-governmental organizations. All sessions were recorded and made publicly available on YouTube and archived in Cornell University's eCommons repository, ensuring long-term access to these resources.
+
+The conference produced a range of permanent artifacts, including video recordings, presentation slides, and written contributions. These materials are accessible through the project website (https://labordynamicsinstitute.github.io/crress/) and have been preserved on the Wayback Machine, Cornell eCommons repository, Open Science Framework's MetaArxiv, and Zenodo. An online book, featuring contributions from various authors, is also available and archived.
+
+A special section in the Harvard Data Science Review (HDSR) was organized as an outcome of the conference, with several articles published, and ongoing contributions to a dedicated column on reproducibility and replicability.  The materials produced have been used in educational settings, workshops, and academic presentations, further extending the project's impact.
+
+CRRESS has contributed to shaping the conversation around reproducibility and replicability in the social sciences, providing accessible resources and fostering a community of practice. The project's outcomes support the development of more credible, transparent, and scientifically sound research, benefiting both the academic community and the broader public interested in evidence-based policymaking.
+
+A more expansive report can be found at https://labordynamicsinstitute.github.io/crress/report/crress-outcomes-report.html
